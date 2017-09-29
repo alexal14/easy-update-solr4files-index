@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ddm:DDM xsi:schemaLocation="http://easy.dans.knaw.nl/schemas/dcx/ http://easy.dans.knaw.nl/schemas/dcx/2012/10/dcx.xsd http://easy.dans.knaw.nl/schemas/dcx/dai/ http://easy.dans.knaw.nl/schemas/dcx/2012/10/dcx-dai.xsd http://easy.dans.knaw.nl/schemas/dcx/gml/ http://easy.dans.knaw.nl/schemas/dcx/2016/dcx-gml.xsd http://easy.dans.knaw.nl/schemas/md/ddm/ http://easy.dans.knaw.nl/schemas/md/2017/ddm.xsd http://www.den.nl/standaard/166/Archeologisch-Basisregister/ http://easy.dans.knaw.nl/schemas/vocab/2012/10/abr-type.xsd http://purl.org/dc/dcmitype/ http://dublincore.org/schemas/xmls/qdc/dcmitype.xsd http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/qdc/dcterms.xsd http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/qdc/dc.xsd http://easy.dans.knaw.nl/schemas/vocab/identifier-type/ https://easy.dans.knaw.nl/schemas/vocab/2017/identifier-type.xsd" xmlns:id-type="http://easy.dans.knaw.nl/schemas/vocab/identifier-type/" xmlns:gml="http://www.opengis.net/gml" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:abr="http://www.den.nl/standaard/166/Archeologisch-Basisregister/" xmlns:dcx-gml="http://easy.dans.knaw.nl/schemas/dcx/gml/" xmlns:dcx-dai="http://easy.dans.knaw.nl/schemas/dcx/dai/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddm="http://easy.dans.knaw.nl/schemas/md/ddm/">
+  <ddm:profile>
+    <dc:title xml:lang="nl">REG.AUG.002 Proefsleuvenonderzoek (IVO-P) Locatie Radeland te Brummen in de gemeente Brummen</dc:title>
+    <dcterms:description xml:lang="nl">[ASM AUTO TEST 2017-08-01]De aangetroffen bodemprofielen komen in sterke mate overeen met de bodemopbouw, zoals aange-troffen bij het verkennend booronderzoek. De bodem is voor het grootste deel verstoord tot in de C-horizont, maar kan voor de (deels) intacte delen worden geclassificeerd als een veldpodzol. In de proefsleuven zijn een drietal sporen aangetroffen, die op basis van het vijftal vondsten die hieruit zijn verzameld kunnen worden gedateerd in de 20e eeuw of later. De sporen zijn waarschijnlijk veroor-zaakt door (sub)recente vergravingen. 
+Het ontbreken van archeologische waarden in de proefsleuven leidt tot de conclusie dat er geen sprake is van een (behoudenswaardige) vindplaats. Het selectieadvies is daarom dan ook om geen vervolgonderzoek uit te voeren en het plangebied vrij te geven voor verdere ontwikkeling</dcterms:description>
+    <dcx-dai:creatorDetails>
+      <dcx-dai:organization>
+        <dcx-dai:name>Econsultancy BV</dcx-dai:name>
+      </dcx-dai:organization>
+    </dcx-dai:creatorDetails>
+    <dcx-dai:creatorDetails>
+      <dcx-dai:author>
+        <dcx-dai:initials>E.</dcx-dai:initials>
+        <dcx-dai:surname>Louwe</dcx-dai:surname>
+        <dcx-dai:organization>
+          <dcx-dai:name>Econsultancy BV</dcx-dai:name>
+        </dcx-dai:organization>
+      </dcx-dai:author>
+    </dcx-dai:creatorDetails>
+    <ddm:created>2015</ddm:created>
+    <ddm:available>2017-10-11</ddm:available>
+    <ddm:audience>D37000</ddm:audience>
+    <ddm:accessRights>OPEN_ACCESS_FOR_REGISTERED_USERS</ddm:accessRights>
+  </ddm:profile>
+  <ddm:dcmiMetadata>
+            <dcterms:identifier xsi:type="id-type:URN">urn:nbn:nl:ui:13-mmvn-g0</dcterms:identifier>
+            <dcterms:identifier xsi:type="id-type:DOI">10.5072/dans-z8b-j5zm</dcterms:identifier>
+            <dcterms:identifier>easy-dataset:6277</dcterms:identifier>
+    <dcterms:rightsHolder>Limburg</dcterms:rightsHolder>
+    <dc:publisher>Econsultancy BV</dc:publisher>
+    <dc:date>2099-08-01 (startdatum)</dc:date>
+    <dc:date>2099-08-30 (einddatum)</dc:date>
+    <dc:format>esri shapefile index</dc:format>
+    <dc:format>jpeg</dc:format>
+    <dc:format>esri shapefile</dc:format>
+    <dc:format>portable document format</dc:format>
+    <dc:format>esri shapefile dbasetable</dc:format>
+    <dc:format>extensible markup language</dc:format>
+    <dc:format>standard vector graphics</dc:format>
+    <dc:type xsi:type="dcterms:DCMIType">Dataset</dc:type>
+    <dc:subject>Archeologisch: destructief:proefputten\proefsleuven</dc:subject>
+    <dc:relation>vondsten depot: Limburg (depotcode:0031)</dc:relation>
+    <dc:language xsi:type="dcterms:ISO639-2">nld</dc:language>
+    <dcterms:identifier>20170801 (onderzoekmeldingsnummer)</dcterms:identifier>
+    <dcterms:identifier xsi:type="id-type:ISSN">2210-8785</dcterms:identifier>
+    <dcterms:spatial>Gelderland</dcterms:spatial>
+    <dcterms:spatial>Brummen</dcterms:spatial>
+    <dcterms:spatial>Brummen</dcterms:spatial>
+    <dcterms:spatial>Locatie Radeland</dcterms:spatial>
+    <dcx-gml:spatial srsName="http://www.opengis.net/def/crs/EPSG/0/28992">
+      <gml:Point>
+        <gml:pos>206796 456975</gml:pos>
+      </gml:Point>
+    </dcx-gml:spatial>
+  
+          
+          
+          </ddm:dcmiMetadata>
+</ddm:DDM>

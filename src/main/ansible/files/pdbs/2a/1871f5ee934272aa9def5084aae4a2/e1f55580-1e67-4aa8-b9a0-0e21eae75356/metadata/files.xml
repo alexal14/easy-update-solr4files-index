@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<files xmlns:dcterms="http://purl.org/dc/terms/">
+  <file filepath="data/pakbon.xml">
+    <dcterms:format>text/xml</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Documenten/15055555 BRU.BOS.APE Definitief en geheel ondertekend PvE Locatie Radeland te Brummen.pdf">
+    <dcterms:format>application/pdf</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Documenten/15055560 BRU.BOS.APO.RAP (Locatie Radeland Brummen) versie D1.pdf">
+    <dcterms:format>application/pdf</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Documenten/15055560 Dagrapport 30-9-2015.pdf">
+    <dcterms:format>application/pdf</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Documenten/15055560 Weekrapport 40 2015.pdf">
+    <dcterms:format>application/pdf</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Documenten/1d PvA.xml">
+    <dcterms:format>text/xml</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Documenten/DeselectieFormulier.pdf">
+    <dcterms:format>application/pdf</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Foto's/15055560F15.jpg">
+    <dcterms:format>image/jpeg</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Foto's/15055560F23.jpg">
+    <dcterms:format>image/jpeg</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Foto's/15055560F9.jpg">
+    <dcterms:format>image/jpeg</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Projectdata/15055560.xml">
+    <dcterms:format>text/xml</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Tekeningen/15055560-P1.svg">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Maaiveld.dbf">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Maaiveld.shp">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Maaiveld.shx">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Profielen.dbf">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Profielen.shp">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Profielen.shx">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Profiellijnen.dbf">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Profiellijnen.shp">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+  <file filepath="data/bestanden/Vlaktekening/Profiellijnen.shx">
+    <dcterms:format>application/octet-stream</dcterms:format>
+  </file>
+</files>

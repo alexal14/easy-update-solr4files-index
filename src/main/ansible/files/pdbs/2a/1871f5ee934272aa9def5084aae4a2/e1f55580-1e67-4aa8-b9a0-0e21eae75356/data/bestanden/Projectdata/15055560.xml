@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:minerva="http://www.econsultancy.nl/2013/minerva">
+  <ID>3d395255-2ebe-4d04-9d25-efea332dc078</ID>
+  <Nummer>15055560</Nummer>
+  <Naam>BRU.BOS.APO</Naam>
+  <Plaatsnaam>Brummen</Plaatsnaam>
+  <Toponiem>Locatie Radeland</Toponiem>
+  <OMNummer>3295545100</OMNummer>
+  <ArchisCodePlaats>1111</ArchisCodePlaats>
+  <Omschrijving>De aangetroffen bodemprofielen komen in sterke mate overeen met de bodemopbouw, zoals aange-troffen bij het verkennend booronderzoek. De bodem is voor het grootste deel verstoord tot in de C-horizont, maar kan voor de (deels) intacte delen worden geclassificeerd als een veldpodzol. In de proefsleuven zijn een drietal sporen aangetroffen, die op basis van het vijftal vondsten die hieruit zijn verzameld kunnen worden gedateerd in de 20e eeuw of later. De sporen zijn waarschijnlijk veroor-zaakt door (sub)recente vergravingen. 
+Het ontbreken van archeologische waarden in de proefsleuven leidt tot de conclusie dat er geen sprake is van een (behoudenswaardige) vindplaats. Het selectieadvies is daarom dan ook om geen vervolgonderzoek uit te voeren en het plangebied vrij te geven voor verdere ontwikkeling</Omschrijving>
+  <GemeenteCode>BRUN15-01</GemeenteCode>
+  <Onderzoekstype>APP</Onderzoekstype>
+  <CentrumCoordX>206796</CentrumCoordX>
+  <CentrumCoordY>456975</CentrumCoordY>
+  <Kaartblad>33 G (1:25.000)</Kaartblad>
+  <OppervlaktePlangebied>1.120 m2</OppervlaktePlangebied>
+  <OppervlakteOnderzoeksgebied>160 m2</OppervlakteOnderzoeksgebied>
+  <Startdatum>2015-09-30T15:00:11</Startdatum>
+  <Einddatum>2015-09-30T15:00:11</Einddatum>
+  <Doorlooptijd>1 dag</Doorlooptijd>
+  <Gemeente>
+    <ID>4f60d7c4-5951-46ef-be6e-4b350fd2e27f</ID>
+    <Naam>Brummen</Naam>
+    <Telefoon>0575 5682833</Telefoon>
+    <Email>gemeente@brummen.nl</Email>
+    <Straat>Engelenburgerlaan</Straat>
+    <Huisnummer>31</Huisnummer>
+    <Postcode>6971 BV</Postcode>
+    <Plaatsnaam>Brummen</Plaatsnaam>
+    <ArchisCode>0213</ArchisCode>
+    <Provincie>
+      <ID>3afdc476-9a5c-453b-9622-2435b0da395a</ID>
+      <Naam>Gelderland</Naam>
+      <Telefoon />
+      <Email />
+      <Straat />
+      <Huisnummer />
+      <Postcode />
+      <Plaatsnaam />
+      <ArchisCode>25</ArchisCode>
+      <Land />
+    </Provincie>
+  </Gemeente>
+  <Provincie>
+    <ID>3afdc476-9a5c-453b-9622-2435b0da395a</ID>
+    <Naam>Gelderland</Naam>
+    <Telefoon />
+    <Email />
+    <Straat />
+    <Huisnummer />
+    <Postcode />
+    <Plaatsnaam />
+    <ArchisCode>25</ArchisCode>
+    <Land />
+  </Provincie>
+  <Opdrachtgever>
+    <ID>60feac23-9a8b-4189-ad70-abfb5512ebb7</ID>
+    <Naam>Bureau Bos</Naam>
+    <Telefoon>035-5416342</Telefoon>
+    <Email>marcel.morren@bureaubos.nl</Email>
+    <Straat>Postbus 636</Straat>
+    <Huisnummer />
+    <Postcode>3740 AP</Postcode>
+    <Plaatsnaam>Baarn</Plaatsnaam>
+  </Opdrachtgever>
+  <ContactPersoonOG>
+    <ID>d1b62216-d035-4f80-b82b-0db517d0d79e</ID>
+    <Voornaam>Marcel</Voornaam>
+    <Tussenvoegsel />
+    <Achternaam>Morren</Achternaam>
+    <NaamMetTitels>dhr</NaamMetTitels>
+    <Voorletters>M.</Voorletters>
+    <Email />
+    <Telefoon />
+    <Mobiel />
+  </ContactPersoonOG>
+  <Opgravingsleider>
+    <ID>a5bfa499-5c18-480a-b054-b9c497465dbb</ID>
+    <Voornaam>Erik</Voornaam>
+    <Tussenvoegsel />
+    <Achternaam>Louwe</Achternaam>
+    <NaamMetTitels>Drs.</NaamMetTitels>
+    <Voorletters>E.</Voorletters>
+    <Email>louwe@econsultancy.nl</Email>
+    <Mnmonic>ELo</Mnmonic>
+    <Functie>projectleider archeologie</Functie>
+    <UitDienst>false</UitDienst>
+    <TelefoonZakelijk>0314 365150</TelefoonZakelijk>
+    <TelefoonPrive />
+  </Opgravingsleider>
+  <Depothouder>
+    <ID>f13d768b-f80c-4b44-a97a-f3557c26d894</ID>
+    <Voornaam>Peter</Voornaam>
+    <Tussenvoegsel />
+    <Achternaam>Wemerman</Achternaam>
+    <NaamMetTitels>P. Wemerman</NaamMetTitels>
+    <Voorletters>P.</Voorletters>
+    <Email>wemerman@econsultancy.nl</Email>
+    <Telefoon />
+    <Mobiel />
+    <Mnmonic>PWe</Mnmonic>
+    <Functie>archeoloog</Functie>
+    <UitDienst>false</UitDienst>
+    <TelefoonZakelijk>0314-365150</TelefoonZakelijk>
+    <TelefoonPrive />
+  </Depothouder>
+  <BevoegdGezag d2p1:type="Gemeente" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ID>4f60d7c4-5951-46ef-be6e-4b350fd2e27f</ID>
+    <Naam>Brummen</Naam>
+    <Telefoon>0575 5682833</Telefoon>
+    <Email>gemeente@brummen.nl</Email>
+    <Straat>Engelenburgerlaan</Straat>
+    <Huisnummer>31</Huisnummer>
+    <Postcode>6971 BV</Postcode>
+    <Plaatsnaam>Brummen</Plaatsnaam>
+    <ArchisCode>?</ArchisCode>
+    <Provincie>
+      <ID>3afdc476-9a5c-453b-9622-2435b0da395a</ID>
+      <Naam>Gelderland</Naam>
+      <Telefoon />
+      <Email />
+      <Straat />
+      <Huisnummer />
+      <Postcode />
+      <Plaatsnaam />
+      <ArchisCode>25</ArchisCode>
+      <Land />
+    </Provincie>
+  </BevoegdGezag>
+  <ContactPersoonBG>
+    <ID>0e94e0d0-ece6-467b-bdaa-4c712dab7529</ID>
+    <Voornaam />
+    <Tussenvoegsel />
+    <Achternaam>Kerkhof</Achternaam>
+    <NaamMetTitels>mevr.</NaamMetTitels>
+    <Voorletters>Y.W.E.P.</Voorletters>
+    <Email>y.kerhof@brummen.nl</Email>
+    <Telefoon>0575-568517</Telefoon>
+    <Mobiel />
+  </ContactPersoonBG>
+  <AdviseurBG>
+    <ID>6188dfba-ddfc-499a-b3a8-f9ac4aa33c2d</ID>
+    <Naam>Regioarcheoloog stedendrieoek Apeldoorn- Brummen-Epe-Lochem-Voorst</Naam>
+    <Telefoon>06 43986656</Telefoon>
+    <Email>regioarcheoloog@apeldoorn.nl</Email>
+    <Straat>Postbus</Straat>
+    <Huisnummer>9033</Huisnummer>
+    <Postcode>7300 ES</Postcode>
+    <Plaatsnaam>Apeldoorn</Plaatsnaam>
+    <Contactpersoon>
+      <ID>0e94e0d0-ece6-467b-bdaa-4c712dab7529</ID>
+      <Voornaam>N.</Voornaam>
+      <Tussenvoegsel />
+      <Achternaam>Vossen</Achternaam>
+      <NaamMetTitels>Mevr. N. Vossen</NaamMetTitels>
+      <Voorletters>N.</Voorletters>
+      <Email>regioarcheoloog@apeldoorn.nl</Email>
+      <Telefoon>055 5802855</Telefoon>
+      <Mobiel>06 43986656</Mobiel>
+    </Contactpersoon>
+  </AdviseurBG>
+  <Depot>
+    <ID>f12221ab-f8be-48cd-b6a3-1430656f4668</ID>
+    <Naam>provinciaal depot voor bodemvondsten Gelders Archeologisch Centrum Nijmegen</Naam>
+    <Telefoon />
+    <Email />
+    <Straat>Postbus 1474</Straat>
+    <Huisnummer />
+    <Postcode>6501 BL</Postcode>
+    <Plaatsnaam>Nijmegen</Plaatsnaam>
+    <Contactpersoon>
+      <ID>fc34dfae-4130-483b-97d7-0d12c8700b7f</ID>
+      <Voornaam>Stephan</Voornaam>
+      <Tussenvoegsel />
+      <Achternaam>Weiss-Koenig</Achternaam>
+      <NaamMetTitels>dr. Stephan Weiss-Koenig</NaamMetTitels>
+      <Voorletters>S.</Voorletters>
+      <Email>s.weiss-koenig@museumhetvalkhof.nl</Email>
+      <Telefoon>024-2402263</Telefoon>
+      <Mobiel>06-46042193</Mobiel>
+    </Contactpersoon>
+    <Vondsten>true</Vondsten>
+    <Monsters>true</Monsters>
+    <Vlaktekening>true</Vlaktekening>
+    <ProjectData>true</ProjectData>
+    <RuweData>false</RuweData>
+    <CoupeTekeningen>true</CoupeTekeningen>
+    <ProfielTekeningen>true</ProfielTekeningen>
+    <ObjectTekeningen>true</ObjectTekeningen>
+    <OverigeTekeningen>true</OverigeTekeningen>
+    <Eindrapport>true</Eindrapport>
+    <Dagrapport>true</Dagrapport>
+    <Weekrapport>true</Weekrapport>
+    <Evaluatierapport>true</Evaluatierapport>
+    <Materiaalanalyse>true</Materiaalanalyse>
+    <Pva>true</Pva>
+    <Pve>true</Pve>
+    <Selectierapport>true</Selectierapport>
+    <Overigerapport>true</Overigerapport>
+    <EindrapportA>true</EindrapportA>
+    <DagrapportA>false</DagrapportA>
+    <WeekrapportA>false</WeekrapportA>
+    <EvaluatierapportA>false</EvaluatierapportA>
+    <MateriaalanalyseA>false</MateriaalanalyseA>
+    <PvaA>false</PvaA>
+    <PveA>true</PveA>
+    <SelectierapportA>true</SelectierapportA>
+    <Sfeerfoto>true</Sfeerfoto>
+    <Overzichtsfoto>true</Overzichtsfoto>
+    <Vlakfoto>true</Vlakfoto>
+    <Profielfoto>true</Profielfoto>
+    <Coupefoto>true</Coupefoto>
+    <Vondstfoto>true</Vondstfoto>
+    <MaxDoosGewicht>15</MaxDoosGewicht>
+    <EenProjectPerDoos>false</EenProjectPerDoos>
+    <VerkorteNaam>Gelderland</VerkorteNaam>
+  </Depot>
+  <Gedeponeerd>false</Gedeponeerd>
+  <Gedeselecteerd>false</Gedeselecteerd>
+  <Status>
+    <Items />
+  </Status>
+  <Notities />
+  <LastNumberVondstkaartje>25</LastNumberVondstkaartje>
+  <VeldVondsten>
+    <Veldvondst>
+      <ID>4378cd65-87fb-404a-8b15-d852ff28af1a</ID>
+      <Nummer>1</Nummer>
+      <Werkput>1</Werkput>
+      <Vlak>1</Vlak>
+      <Vak>0</Vak>
+      <Profiel>0</Profiel>
+      <Spoor>2</Spoor>
+      <Segment />
+      <Vulling>0</Vulling>
+      <Boring>0</Boring>
+      <Hoogte>8.31</Hoogte>
+      <Verzamelwijze>AANLEG</Verzamelwijze>
+      <Datum>2015-09-30T08:51:28</Datum>
+      <Gedeselecteerd>false</Gedeselecteerd>
+      <BevatGedeselecteerd>false</BevatGedeselecteerd>
+      <Ingemeten>true</Ingemeten>
+      <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+      <Tekening>false</Tekening>
+      <TekeningNummer />
+      <Opmerking />
+      <VerpakkingsEenheid>
+        <VerpakkingsEenheid>
+          <ID>03b1fa67-8477-4e7f-930a-ad92e99544a3</ID>
+          <HoofdCategorie>KER</HoofdCategorie>
+          <Nummer>1</Nummer>
+          <ConditioneringsCategorie>1</ConditioneringsCategorie>
+          <Gedeselecteerd>false</Gedeselecteerd>
+          <BevatGedeselecteerd>false</BevatGedeselecteerd>
+          <DoosNummer>D51</DoosNummer>
+          <DoosID>2b11c129-755b-486a-82b3-9ceded0f077e</DoosID>
+          <Vondsten>
+            <Vondst>
+              <ID>5093cb2f-f22f-40ad-a492-581703c4151b</ID>
+              <VeldVondstNummer>1</VeldVondstNummer>
+              <Volgnummer>1</Volgnummer>
+              <MateriaalCategorie>KER</MateriaalCategorie>
+              <ConditioneringsCategorie>1</ConditioneringsCategorie>
+              <Aantal>1</Aantal>
+              <Gewicht>30</Gewicht>
+              <Artefact1>industrieel wit Maastricht</Artefact1>
+              <Artefact2>loodglazuur</Artefact2>
+              <Artefact3 />
+              <ArtefactType>INDUSWIT</ArtefactType>
+              <Datering>1832 n. Chr. - 1950 n. Chr.</Datering>
+              <Opspit>false</Opspit>
+              <BeginPeriode>NTM</BeginPeriode>
+              <EindPeriode>NTL</EindPeriode>
+              <Toestand />
+              <Exposabel>false</Exposabel>
+              <Opmerkingen />
+              <Tekfoto />
+              <FotoNummmer>0</FotoNummmer>
+              <Gedeselecteerd>false</Gedeselecteerd>
+              <Geconserveerd>false</Geconserveerd>
+              <Lichtgevoelig>false</Lichtgevoelig>
+              <Breekbaar>false</Breekbaar>
+              <Gevaarlijkestoffen />
+              <VerpakkingsEenheidID>03b1fa67-8477-4e7f-930a-ad92e99544a3</VerpakkingsEenheidID>
+              <VeldVondstID>4378cd65-87fb-404a-8b15-d852ff28af1a</VeldVondstID>
+              <Deleted>false</Deleted>
+            </Vondst>
+          </Vondsten>
+          <VolgnummersUniek>true</VolgnummersUniek>
+          <VeldvondstNummer>1</VeldvondstNummer>
+        </VerpakkingsEenheid>
+        <VerpakkingsEenheid>
+          <ID>579e4417-847e-463c-91ca-668f301cd995</ID>
+          <HoofdCategorie>SXX</HoofdCategorie>
+          <Nummer>2</Nummer>
+          <ConditioneringsCategorie>1</ConditioneringsCategorie>
+          <Omschrijving />
+          <Gedeselecteerd>false</Gedeselecteerd>
+          <BevatGedeselecteerd>false</BevatGedeselecteerd>
+          <Motivatie />
+          <DoosNummer>D51</DoosNummer>
+          <DoosID>2b11c129-755b-486a-82b3-9ceded0f077e</DoosID>
+          <Vondsten>
+            <Vondst>
+              <ID>189f623f-0d24-4ed1-9f41-b193b8cad97f</ID>
+              <VeldVondstNummer>1</VeldVondstNummer>
+              <Volgnummer>1</Volgnummer>
+              <MateriaalCategorie>SXX</MateriaalCategorie>
+              <ConditioneringsCategorie>1</ConditioneringsCategorie>
+              <Aantal>1</Aantal>
+              <Gewicht>5</Gewicht>
+              <Artefact1>teer</Artefact1>
+              <Artefact2 />
+              <Artefact3 />
+              <ArtefactType>DAKPAN</ArtefactType>
+              <Datering>1950 n. Chr. - 2000 n. Chr.</Datering>
+              <Opspit>false</Opspit>
+              <BeginPeriode>NTL</BeginPeriode>
+              <EindPeriode>NTL</EindPeriode>
+              <Toestand />
+              <Exposabel>false</Exposabel>
+              <Opmerkingen />
+              <Tekfoto />
+              <FotoNummmer>0</FotoNummmer>
+              <Gedeselecteerd>false</Gedeselecteerd>
+              <Geconserveerd>false</Geconserveerd>
+              <Lichtgevoelig>false</Lichtgevoelig>
+              <Breekbaar>false</Breekbaar>
+              <Gevaarlijkestoffen />
+              <VerpakkingsEenheidID>579e4417-847e-463c-91ca-668f301cd995</VerpakkingsEenheidID>
+              <VeldVondstID>4378cd65-87fb-404a-8b15-d852ff28af1a</VeldVondstID>
+              <Deleted>false</Deleted>
+            </Vondst>
+          </Vondsten>
+          <VolgnummersUniek>true</VolgnummersUniek>
+          <VeldvondstNummer>1</VeldvondstNummer>
+        </VerpakkingsEenheid>
+      </VerpakkingsEenheid>
+      <Materiaal>KER</Materiaal>
+      <DatumFoto>0001-01-01T00:00:00</DatumFoto>
+      <Foto>false</Foto>
+    </Veldvondst>
+    <Veldvondst>
+      <ID>de11f59e-3cc8-4737-af21-07cb7ea9f260</ID>
+      <Nummer>2</Nummer>
+      <Werkput>2</Werkput>
+      <Vlak>1</Vlak>
+      <Vak>0</Vak>
+      <Profiel>0</Profiel>
+      <Spoor>3</Spoor>
+      <Segment />
+      <Vulling>0</Vulling>
+      <Boring>0</Boring>
+      <Hoogte>8.59</Hoogte>
+      <Verzamelwijze>AANLEG</Verzamelwijze>
+      <Datum>2015-09-30T11:22:26</Datum>
+      <Gedeselecteerd>false</Gedeselecteerd>
+      <BevatGedeselecteerd>false</BevatGedeselecteerd>
+      <Ingemeten>true</Ingemeten>
+      <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+      <Tekening>false</Tekening>
+      <TekeningNummer />
+      <Opmerking />
+      <VerpakkingsEenheid>
+        <VerpakkingsEenheid>
+          <ID>27cad724-f438-45e9-a856-32f0eee6d1ef</ID>
+          <HoofdCategorie>KER</HoofdCategorie>
+          <Nummer>1</Nummer>
+          <ConditioneringsCategorie>1</ConditioneringsCategorie>
+          <Gedeselecteerd>false</Gedeselecteerd>
+          <BevatGedeselecteerd>false</BevatGedeselecteerd>
+          <DoosNummer>D51</DoosNummer>
+          <DoosID>2b11c129-755b-486a-82b3-9ceded0f077e</DoosID>
+          <Vondsten>
+            <Vondst>
+              <ID>3abe25ac-1b72-4bd9-b739-52e4d6f3cf27</ID>
+              <VeldVondstNummer>2</VeldVondstNummer>
+              <Volgnummer>1</Volgnummer>
+              <MateriaalCategorie>KER</MateriaalCategorie>
+              <ConditioneringsCategorie>1</ConditioneringsCategorie>
+              <Aantal>1</Aantal>
+              <Gewicht>29</Gewicht>
+              <Artefact1>Frankforter waar Nederland</Artefact1>
+              <Artefact2>loodglazuur met mangaan</Artefact2>
+              <Artefact3 />
+              <ArtefactType>ROOD</ArtefactType>
+              <Datering>1750 n. Chr. - 1900 n. Chr.</Datering>
+              <Opspit>false</Opspit>
+              <BeginPeriode>NTM</BeginPeriode>
+              <EindPeriode>NTL</EindPeriode>
+              <Toestand />
+              <Exposabel>false</Exposabel>
+              <Opmerkingen />
+              <Tekfoto />
+              <FotoNummmer>0</FotoNummmer>
+              <Gedeselecteerd>false</Gedeselecteerd>
+              <Geconserveerd>false</Geconserveerd>
+              <Lichtgevoelig>false</Lichtgevoelig>
+              <Breekbaar>false</Breekbaar>
+              <Gevaarlijkestoffen />
+              <VerpakkingsEenheidID>27cad724-f438-45e9-a856-32f0eee6d1ef</VerpakkingsEenheidID>
+              <VeldVondstID>de11f59e-3cc8-4737-af21-07cb7ea9f260</VeldVondstID>
+              <Deleted>false</Deleted>
+            </Vondst>
+            <Vondst>
+              <ID>7d830f7f-f6e0-4371-90ef-f29e1fd8bd54</ID>
+              <VeldVondstNummer>2</VeldVondstNummer>
+              <Volgnummer>2</Volgnummer>
+              <MateriaalCategorie>KER</MateriaalCategorie>
+              <ConditioneringsCategorie>1</ConditioneringsCategorie>
+              <Aantal>1</Aantal>
+              <Gewicht>38</Gewicht>
+              <Artefact1>industrieel wit Engeland</Artefact1>
+              <Artefact2>loodglazuur</Artefact2>
+              <Artefact3>blindmerk Wedgewood nr. 7</Artefact3>
+              <ArtefactType>INDUSWIT</ArtefactType>
+              <Datering>1850 n. Chr. - 1900 n. Chr.</Datering>
+              <Opspit>false</Opspit>
+              <BeginPeriode>NTL</BeginPeriode>
+              <EindPeriode>NTL</EindPeriode>
+              <Toestand />
+              <Exposabel>false</Exposabel>
+              <Opmerkingen />
+              <Tekfoto />
+              <FotoNummmer>0</FotoNummmer>
+              <Gedeselecteerd>false</Gedeselecteerd>
+              <Geconserveerd>false</Geconserveerd>
+              <Lichtgevoelig>false</Lichtgevoelig>
+              <Breekbaar>false</Breekbaar>
+              <Gevaarlijkestoffen />
+              <VerpakkingsEenheidID>27cad724-f438-45e9-a856-32f0eee6d1ef</VerpakkingsEenheidID>
+              <VeldVondstID>de11f59e-3cc8-4737-af21-07cb7ea9f260</VeldVondstID>
+              <Deleted>false</Deleted>
+            </Vondst>
+            <Vondst>
+              <ID>8f413026-a935-4750-994b-ca3e06e8f2ff</ID>
+              <VeldVondstNummer>2</VeldVondstNummer>
+              <Volgnummer>3</Volgnummer>
+              <MateriaalCategorie>KER</MateriaalCategorie>
+              <ConditioneringsCategorie>1</ConditioneringsCategorie>
+              <Aantal>1</Aantal>
+              <Gewicht>223</Gewicht>
+              <Artefact1>bouwkeramiek Nederland</Artefact1>
+              <Artefact2 />
+              <Artefact3>golfpan grijs</Artefact3>
+              <ArtefactType>DAKPAN</ArtefactType>
+              <Datering>1900 n. Chr. - 2000 n. Chr.</Datering>
+              <Opspit>false</Opspit>
+              <BeginPeriode>NTL</BeginPeriode>
+              <EindPeriode>NTL</EindPeriode>
+              <Toestand />
+              <Exposabel>false</Exposabel>
+              <Opmerkingen />
+              <Tekfoto />
+              <FotoNummmer>0</FotoNummmer>
+              <Gedeselecteerd>false</Gedeselecteerd>
+              <Geconserveerd>false</Geconserveerd>
+              <Lichtgevoelig>false</Lichtgevoelig>
+              <Breekbaar>false</Breekbaar>
+              <Gevaarlijkestoffen />
+              <VerpakkingsEenheidID>27cad724-f438-45e9-a856-32f0eee6d1ef</VerpakkingsEenheidID>
+              <VeldVondstID>de11f59e-3cc8-4737-af21-07cb7ea9f260</VeldVondstID>
+              <Deleted>false</Deleted>
+            </Vondst>
+          </Vondsten>
+          <VolgnummersUniek>true</VolgnummersUniek>
+          <VeldvondstNummer>2</VeldvondstNummer>
+        </VerpakkingsEenheid>
+      </VerpakkingsEenheid>
+      <Materiaal>KER</Materiaal>
+      <DatumFoto>0001-01-01T00:00:00</DatumFoto>
+      <Foto>false</Foto>
+    </Veldvondst>
+  </VeldVondsten>
+  <Monsters />
+  <Fotos>
+    <Items>
+      <Foto>
+        <ID>236e5b72-5928-4312-93be-6e10274f9050</ID>
+        <Bestandsnaam>15055560F28</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>a65d31c7-f8f6-4ad7-9244-0cc2cef62649</BestandID>
+        <Nummer>28</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>0bb521b0-6c77-4c28-8c55-b9bbc465e704</ID>
+        <Bestandsnaam>15055560F29</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>1eb54412-2a8c-4d19-a617-77cee7f5004e</BestandID>
+        <Nummer>29</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>58c3dbd3-8d7d-4aaf-aafd-8f9b91bb7cbe</ID>
+        <Bestandsnaam>15055560F27</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>7544afa6-9c39-424a-b99c-b59ef9fc902c</BestandID>
+        <Nummer>27</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>2b059979-0e31-43d7-af08-67e725edac25</ID>
+        <Bestandsnaam>15055560F21</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>cebc8adb-600c-4005-acb4-9997c1d53e5d</BestandID>
+        <Nummer>21</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>f9253e0f-cfd6-4483-88d1-488b196989dd</ID>
+        <Bestandsnaam>15055560F26</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c892d99e-0afb-41b8-bb5d-5953be1790f3</BestandID>
+        <Nummer>26</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>b9b1d99d-12af-47fa-9b46-6f40b5902886</ID>
+        <Bestandsnaam>15055560F9</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>8bebdb81-4ea9-47e9-b61f-21b2d7043948</BestandID>
+        <Nummer>9</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>179e052b-5b54-4aea-8d04-a93ed8a4a334</ID>
+        <Bestandsnaam>15055560F44</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>4454080e-db48-49b7-a250-63b23d2d42fc</BestandID>
+        <Nummer>44</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>a7a0fdbd-bd27-4104-b656-1201cb578466</ID>
+        <Bestandsnaam>15055560F36</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>17d7a992-0c5a-49e6-85ac-098aff451fc1</BestandID>
+        <Nummer>36</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>25aa72ac-ffd8-4946-a516-4c2d0027bed5</ID>
+        <Bestandsnaam>15055560F37</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>f8d649d7-b08a-4e9a-bb69-22642b8bdc2c</BestandID>
+        <Nummer>37</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>d029c7d5-fd1f-433e-b700-758299592d38</ID>
+        <Bestandsnaam>15055560F35</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>b1ced0dc-e935-4ac8-b962-d165fd0343e9</BestandID>
+        <Nummer>35</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>03a688dc-f94b-40de-af9a-bfb2835936cf</ID>
+        <Bestandsnaam>15055560F33</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>2586b102-b0be-42a8-b6aa-3f601733fcf3</BestandID>
+        <Nummer>33</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>b7d86815-9d76-439a-a865-1f79792adb06</ID>
+        <Bestandsnaam>15055560F34</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>dbbc83b9-9c9d-402e-9dba-b043d1cd4533</BestandID>
+        <Nummer>34</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>510d09ab-e049-48d3-9c96-164ac5990c4a</ID>
+        <Bestandsnaam>15055560F10</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>4a859c29-17ef-4316-8bba-973ba37f0374</BestandID>
+        <Nummer>10</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>e6267ae1-7ed3-468e-a26b-ffeff68ea7e9</ID>
+        <Bestandsnaam>15055560F11</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>02e1c5a7-b9e0-4d5e-87dc-d2648e6e7b39</BestandID>
+        <Nummer>11</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>09dc5af9-16ab-4b09-bf96-56fef1a7ad28</ID>
+        <Bestandsnaam>15055560F8</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>816ff469-a7c6-4d43-9e47-a9ec8f116dba</BestandID>
+        <Nummer>8</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>84730300-8d64-41ec-9de0-e9a84e1cdb86</ID>
+        <Bestandsnaam>15055560F5</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>ecdfe126-1dd7-47aa-83ae-28ad6be17f04</BestandID>
+        <Nummer>5</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>7081054b-84ef-4d22-80ad-fcb71ea6db10</ID>
+        <Bestandsnaam>15055560F6</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>aec80e4f-151e-4e89-b008-f5835f269a24</BestandID>
+        <Nummer>6</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>2278e393-cfaf-4eb9-871b-6ea4ac81e405</ID>
+        <Bestandsnaam>15055560F7</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>73ef36f7-70e1-4993-a498-154e32a3d665</BestandID>
+        <Nummer>7</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>79b1090f-c979-4d09-aca9-899048a258d9</ID>
+        <Bestandsnaam>15055560F20</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>442da7bf-0989-435e-9d0c-bc7834388acc</BestandID>
+        <Nummer>20</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>156aadaf-3754-47ab-af7c-11c01b378f20</ID>
+        <Bestandsnaam>15055560F22</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>55ac1e08-a46a-4f56-9290-9bed89c86bb0</BestandID>
+        <Nummer>22</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>8ee5c7a8-5e23-4563-9f2c-39d044380af4</ID>
+        <Bestandsnaam>15055560F23</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>eb35b6f5-1b32-4ed2-bcd8-a40523c116e2</BestandID>
+        <Nummer>23</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>4eab16ab-9952-48b1-b94b-c1385e3c797a</ID>
+        <Bestandsnaam>15055560F15</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>b8414e12-2e09-47a9-bbd5-dcb1f2357858</BestandID>
+        <Nummer>15</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>aca48f18-50d2-453d-88b1-06bde9be2e97</ID>
+        <Bestandsnaam>15055560F16</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>125fda39-515a-4fde-8c69-e66c5eb4a4c1</BestandID>
+        <Nummer>16</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>25f6ac84-2f75-4879-a04a-a13a496c8f5c</ID>
+        <Bestandsnaam>15055560F17</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c7d23ec9-d6ec-4f2d-af25-d9467aadf8eb</BestandID>
+        <Nummer>17</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>494f35fa-1683-4329-9867-864ad9a721a9</ID>
+        <Bestandsnaam>15055560F54</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>49eb3661-a8bf-41a8-9405-39e8ba15db40</BestandID>
+        <Nummer>54</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>43b6d087-579f-4f46-bf8c-2e0eae5e3bc7</ID>
+        <Bestandsnaam>15055560F55</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>057572d1-4568-4b49-ba09-3cf660332afe</BestandID>
+        <Nummer>55</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>a71128ef-22e1-45a4-9040-743f876659ca</ID>
+        <Bestandsnaam>15055560F53</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>2966aff6-0b63-4e6a-8897-d0bb3f379f33</BestandID>
+        <Nummer>53</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>131d1490-8770-408e-99f1-1fa807169c5a</ID>
+        <Bestandsnaam>15055560F2</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>d8d0b490-8cf6-435a-8f2b-ba72a2863530</BestandID>
+        <Nummer>2</Nummer>
+        <Werkput>0</Werkput>
+        <Vlak>0</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Sfeer</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>68c74738-2f61-48b6-8b42-a5a48a5cc134</ID>
+        <Bestandsnaam>15055560F30</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>22a15007-943f-4b90-9c35-3ac71d128a2a</BestandID>
+        <Nummer>30</Nummer>
+        <Werkput>0</Werkput>
+        <Vlak>0</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Sfeer</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>9bec56e4-c714-4ec3-abc9-f387ec87b712</ID>
+        <Bestandsnaam>15055560F4</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>be8effbb-1028-4dd3-b865-9d3f3bd000f5</BestandID>
+        <Nummer>4</Nummer>
+        <Werkput>0</Werkput>
+        <Vlak>0</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Sfeer</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>7da8e0d8-1e3a-4782-b4f3-97b1d4e13c45</ID>
+        <Bestandsnaam>15055560F3</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c91b8548-0fe2-4a03-91d9-25c546ea540b</BestandID>
+        <Nummer>3</Nummer>
+        <Werkput>0</Werkput>
+        <Vlak>0</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Sfeer</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>d8bb23a7-779f-4246-8010-e361080da8bb</ID>
+        <Bestandsnaam>15055560F31</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>a9cd2b71-b0f9-4874-9d0c-3479221cb8f3</BestandID>
+        <Nummer>31</Nummer>
+        <Werkput>0</Werkput>
+        <Vlak>0</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Sfeer</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>fb7aeadc-9726-4ad2-adea-1e668e3a7132</ID>
+        <Bestandsnaam>15055560F32</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>cbc2f6cf-cb87-4d79-ac83-f5d18256907b</BestandID>
+        <Nummer>32</Nummer>
+        <Werkput>0</Werkput>
+        <Vlak>0</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Sfeer</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>6ecf16bd-a001-4f5e-adb0-b7cb7a799d58</ID>
+        <Bestandsnaam>15055560F14</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>6d7ed267-a9d2-432a-a261-1c1f01cdf0fa</BestandID>
+        <Nummer>14</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>e46006c4-2721-4265-9b84-fbcb21f79781</ID>
+        <Bestandsnaam>15055560F43</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>a3522fdf-d00c-41d2-9d2a-5db1b7d8d3ee</BestandID>
+        <Nummer>43</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>f362f084-a5b3-4d25-adbe-b7f34ea4a5f3</ID>
+        <Bestandsnaam>15055560F45</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>61773609-f213-4995-864a-a4fce3090eec</BestandID>
+        <Nummer>45</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>dd65c358-d350-4977-a785-64f50ff57474</ID>
+        <Bestandsnaam>15055560F40</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>e2b16b5b-7b85-487b-9d8f-2643f54e02bb</BestandID>
+        <Nummer>40</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>0f9fb2e0-8f22-4e87-912a-ef807bb321d6</ID>
+        <Bestandsnaam>15055560F39</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>a0100496-af57-4a6d-8152-da2cac0245dd</BestandID>
+        <Nummer>39</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>be3f704b-b4ec-42cd-aa96-c1bd3c227415</ID>
+        <Bestandsnaam>15055560F42</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>9c26ee61-921f-4ed8-8b10-d0601b07c72f</BestandID>
+        <Nummer>42</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>f57c9a8e-a212-4640-a56e-e079074994ba</ID>
+        <Bestandsnaam>15055560F38</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c5d56997-8c64-4093-bd79-acbd05c63a42</BestandID>
+        <Nummer>38</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>cd42d102-2e66-4d72-a24c-f8d7a20c23a4</ID>
+        <Bestandsnaam>15055560F46</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>d73d2d54-d134-47fa-bb97-9e353737054f</BestandID>
+        <Nummer>46</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>7c230f5a-f04d-4e50-89d3-e6f9ee955bbf</ID>
+        <Bestandsnaam>15055560F41</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>9d25d12a-cdae-484a-8c8f-3f027555e532</BestandID>
+        <Nummer>41</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>0</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Vlak</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>e93003a3-86f4-4957-aa44-09fe709a6a47</ID>
+        <Bestandsnaam>15055560F12</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>5b8f67e7-e771-4de9-bdde-fc97489b1fae</BestandID>
+        <Nummer>12</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>1</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>e701e758-0505-4e54-b512-9c8d08c67a13</ID>
+        <Bestandsnaam>15055560F13</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>e49313cf-20ba-4062-9fcc-462c0c9b2a33</BestandID>
+        <Nummer>13</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>1</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>95117ed4-378b-4f12-8a7b-81e3306cac34</ID>
+        <Bestandsnaam>15055560F18</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>2f36056b-6162-4818-bfa8-131195e191ae</BestandID>
+        <Nummer>18</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>2</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>8b904920-7fc1-470d-bd99-a93663a9a4ec</ID>
+        <Bestandsnaam>15055560F19</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>964142e2-5e0d-453e-9367-b941867c0687</BestandID>
+        <Nummer>19</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>2</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>0c408538-973a-4747-8114-bd59a4265e71</ID>
+        <Bestandsnaam>15055560F24</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>00392daa-7d5a-43f5-9c66-3fb3b6f0ed72</BestandID>
+        <Nummer>24</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>3</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>ffafecdb-c27b-419f-be1a-5d3298c86b00</ID>
+        <Bestandsnaam>15055560F25</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c607cd55-5961-489d-99ac-3b14cea33c39</BestandID>
+        <Nummer>25</Nummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>3</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>f43e78a0-5fd2-41f9-a895-5fffc82277b8</ID>
+        <Bestandsnaam>15055560F48</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>902f3475-1dfa-4f06-81c7-b1af943c7242</BestandID>
+        <Nummer>48</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>4</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>b9a5e326-698e-4019-8530-54ac71392010</ID>
+        <Bestandsnaam>15055560F47</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>d08ea08a-688b-406a-8276-d86ec0291c6f</BestandID>
+        <Nummer>47</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>4</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>ebb6d7d2-f835-4c13-8931-e7a448103a7c</ID>
+        <Bestandsnaam>15055560F49</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c74bee9b-80f7-479f-89f1-914360d6c6a7</BestandID>
+        <Nummer>49</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>5</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>7eca7f96-f4e1-4e9f-8bc9-eefce5001618</ID>
+        <Bestandsnaam>15055560F50</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>498617d0-1a97-42a8-bdf8-5378bbfa159e</BestandID>
+        <Nummer>50</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>5</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>40afa810-5675-4ecf-aac5-2cdf643cbd72</ID>
+        <Bestandsnaam>15055560F51</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>c10d0bea-b615-4069-aa55-30b17375deb4</BestandID>
+        <Nummer>51</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>6</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+      <Foto>
+        <ID>08f69c6f-a366-41c9-827b-5c3d236fe922</ID>
+        <Bestandsnaam>15055560F52</Bestandsnaam>
+        <Extensie>.JPG</Extensie>
+        <BestandsLocatie>C:\Users\Archeologie\Desktop\Brummen 15055560\Veldwerk\Foto's</BestandsLocatie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>5a8e8be3-b437-4f30-81da-8749a659ed2e</BestandID>
+        <Nummer>52</Nummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Profiel>6</Profiel>
+        <Sporen />
+        <Vondst>0</Vondst>
+        <Soort>Digitaal</Soort>
+        <FotoType>Profiel</FotoType>
+        <Fotograaf>ETb</Fotograaf>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <FotoFormulier />
+        <Verwijderen>false</Verwijderen>
+        <Opmerking />
+        <Tebeschrijven>false</Tebeschrijven>
+        <Geregistreerd>true</Geregistreerd>
+      </Foto>
+    </Items>
+    <Lastnumber>55</Lastnumber>
+  </Fotos>
+  <GPSProjecten>
+    <Items>
+      <GPSProject>
+        <GPStype>SokkiaSurvCE26</GPStype>
+        <BestandsLocatie>C:\Users\Archeologie\Documents\Bluetooth\Inbox\UITZET.crd</BestandsLocatie>
+        <ImportDatum>0001-01-01T00:00:00</ImportDatum>
+        <ImportLogging />
+        <ImportVlakken>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportVlakken>
+        <ImportSporen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportSporen>
+        <ImportVullingen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportVullingen>
+        <ImportProfielen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportProfielen>
+        <ImportProfiellijnen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportProfiellijnen>
+        <ImportVondsten>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportVondsten>
+        <ImportMonsters>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportMonsters>
+        <ImportHoogtemetingen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportHoogtemetingen>
+        <ImportMaaivelden>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportMaaivelden>
+        <ImportCoupelijnen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportCoupelijnen>
+        <ImportHulplijnen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportHulplijnen>
+        <ImportBoringen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportBoringen>
+      </GPSProject>
+      <GPSProject>
+        <GPStype>SokkiaSurvCE26</GPStype>
+        <BestandsLocatie>C:\Users\Archeologie\Documents\Bluetooth\Inbox\UITZET.crd</BestandsLocatie>
+        <ImportDatum>2015-10-02T13:04:15.8835164+02:00</ImportDatum>
+        <ImportLogging>Import 2-10-2015 13:04:15
+Vlakken 1,2
+Sporen 1-3
+Profiellijnen 1-6
+Vondsten 1,2
+Hoogtemetingen 1-17
+Maaiveld 1-11
+Hulplijnen 1
+
+</ImportLogging>
+        <ImportVlakken>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Vlakken 1,2</ImportLogging>
+          <LastFID>3</LastFID>
+        </ImportVlakken>
+        <ImportSporen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Sporen 1-3</ImportLogging>
+          <LastFID>6</LastFID>
+        </ImportSporen>
+        <ImportVullingen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportVullingen>
+        <ImportProfielen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportProfielen>
+        <ImportProfiellijnen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Profiellijnen 1-6</ImportLogging>
+          <LastFID>6</LastFID>
+        </ImportProfiellijnen>
+        <ImportVondsten>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Vondsten 1,2</ImportLogging>
+          <LastFID>2</LastFID>
+        </ImportVondsten>
+        <ImportMonsters>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportMonsters>
+        <ImportHoogtemetingen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Hoogtemetingen 1-17</ImportLogging>
+          <LastFID>17</LastFID>
+        </ImportHoogtemetingen>
+        <ImportMaaivelden>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Maaiveld 1-11</ImportLogging>
+          <LastFID>11</LastFID>
+        </ImportMaaivelden>
+        <ImportCoupelijnen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportCoupelijnen>
+        <ImportHulplijnen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <ImportLogging>Hulplijnen 1</ImportLogging>
+          <LastFID>1</LastFID>
+        </ImportHulplijnen>
+        <ImportBoringen>
+          <GPStype>SokkiaSurvCE26</GPStype>
+          <LastFID>0</LastFID>
+        </ImportBoringen>
+      </GPSProject>
+    </Items>
+  </GPSProjecten>
+  <Vlakken>
+    <Items>
+      <VlakObject>
+        <ID>e805efec-3d9e-490d-aedb-fa4fdbda5601</ID>
+        <DatumIngemeten>2015-09-30T10:03:59</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+        <Tekening>false</Tekening>
+        <Opmerking>VEEL BIOTURBATIE</Opmerking>
+        <Kleur>GE WI</Kleur>
+        <Materiaal>Z3S1</Materiaal>
+        <Oppervlakte>66.3877</Oppervlakte>
+        <Hoogte>8.62</Hoogte>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+      </VlakObject>
+      <VlakObject>
+        <ID>df4a62f8-7f0b-404e-bb28-a2cbb3845aab</ID>
+        <DatumIngemeten>2015-09-30T11:47:16</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+        <Tekening>false</Tekening>
+        <Opmerking />
+        <Kleur>GE WI</Kleur>
+        <Materiaal>Z3S1</Materiaal>
+        <Oppervlakte>54.3751</Oppervlakte>
+        <Hoogte>8.54</Hoogte>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+      </VlakObject>
+    </Items>
+  </Vlakken>
+  <Sporen>
+    <Items>
+      <Spoor>
+        <ID>ea0814dd-b765-4ffa-92ed-4602f617216e</ID>
+        <DatumIngemeten>2015-09-30T08:42:05</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>0001-01-01T00:00:00</DatumFoto>
+        <Foto>false</Foto>
+        <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+        <Tekening>false</Tekening>
+        <TekeningNummer />
+        <Opmerking>SCHERP LOS OK VIJVER</Opmerking>
+        <Kleur>DRBR WI GEVLEKT</Kleur>
+        <Materiaal>Z3S1H2</Materiaal>
+        <Oppervlakte>1.6713</Oppervlakte>
+        <Hoogte>8.31</Hoogte>
+        <Spoor>1</Spoor>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Aard>KL</Aard>
+        <Insluitsels>HK6</Insluitsels>
+        <Gecoupeerd>false</Gecoupeerd>
+        <WordtOversnedenDoor />
+        <IdentiekAan>0</IdentiekAan>
+        <Structuur>0</Structuur>
+        <Fase>0</Fase>
+        <Diepte>0</Diepte>
+        <GrondspoorType>KUIL</GrondspoorType>
+        <Velddatering>REC</Velddatering>
+        <Datering>1950n.Chr. - 2000n.Chr.</Datering>
+        <DateringMethode>I2</DateringMethode>
+        <BeginPeriode>REC</BeginPeriode>
+        <EindPeriode>REC</EindPeriode>
+        <Veldvondstnummers />
+        <Monsternummers />
+        <JongereString />
+        <OudereString />
+        <IdentiekString>2</IdentiekString>
+      </Spoor>
+      <Spoor>
+        <ID>3a203559-583a-4b68-b9c9-425444542eb5</ID>
+        <DatumIngemeten>2015-09-30T09:57:41</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>0001-01-01T00:00:00</DatumFoto>
+        <Foto>false</Foto>
+        <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+        <Tekening>false</Tekening>
+        <TekeningNummer />
+        <Opmerking />
+        <Kleur>DRBR WI GEVLEKT</Kleur>
+        <Materiaal>Z3S1</Materiaal>
+        <Oppervlakte>1.3226</Oppervlakte>
+        <Hoogte>8.33</Hoogte>
+        <Spoor>2</Spoor>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Aard>KL</Aard>
+        <Insluitsels />
+        <Gecoupeerd>false</Gecoupeerd>
+        <WordtOversnedenDoor />
+        <IdentiekAan>1</IdentiekAan>
+        <Structuur>0</Structuur>
+        <Fase>0</Fase>
+        <Diepte>0</Diepte>
+        <GrondspoorType>KUIL</GrondspoorType>
+        <Velddatering>REC</Velddatering>
+        <Datering>1950n.Chr. - 2000n.Chr.</Datering>
+        <DateringMethode>V2</DateringMethode>
+        <BeginPeriode>REC</BeginPeriode>
+        <EindPeriode>REC</EindPeriode>
+        <Veldvondstnummers>1</Veldvondstnummers>
+        <Monsternummers />
+        <JongereString />
+        <OudereString />
+        <IdentiekString>1</IdentiekString>
+      </Spoor>
+      <Spoor>
+        <ID>db6eb89a-0586-4890-9aad-a783ab8da1e7</ID>
+        <DatumIngemeten>2015-09-30T11:37:34</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>0001-01-01T00:00:00</DatumFoto>
+        <Foto>false</Foto>
+        <DatumTekening>0001-01-01T00:00:00</DatumTekening>
+        <Tekening>false</Tekening>
+        <TekeningNummer />
+        <Opmerking>GEGRAVEN MET TANDENBAK</Opmerking>
+        <Kleur>DRBRZW</Kleur>
+        <Materiaal>Z3S1H2</Materiaal>
+        <Oppervlakte>34.2661</Oppervlakte>
+        <Hoogte>8.46</Hoogte>
+        <Spoor>3</Spoor>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Aard>KL</Aard>
+        <Insluitsels>HK BA AW</Insluitsels>
+        <Gecoupeerd>false</Gecoupeerd>
+        <WordtOversnedenDoor />
+        <IdentiekAan>0</IdentiekAan>
+        <Structuur>0</Structuur>
+        <Fase>0</Fase>
+        <Diepte>0</Diepte>
+        <GrondspoorType>KUIL</GrondspoorType>
+        <Velddatering>REC</Velddatering>
+        <Datering>1900n.Chr. - 2000n.Chr.</Datering>
+        <DateringMethode>V3</DateringMethode>
+        <BeginPeriode>SUB</BeginPeriode>
+        <EindPeriode>REC</EindPeriode>
+        <Veldvondstnummers>2</Veldvondstnummers>
+        <Monsternummers />
+        <JongereString />
+        <OudereString />
+        <IdentiekString />
+      </Spoor>
+    </Items>
+  </Sporen>
+  <Vullingen>
+    <Items />
+  </Vullingen>
+  <Profielen>
+    <Items>
+      <Profiel>
+        <ID>46cc0383-ea0b-474f-97ab-d77dbb293763</ID>
+        <DatumIngemeten>2015-09-30T08:50:27</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>2014-07-21T09:39:42+02:00</DatumTekening>
+        <Tekening>true</Tekening>
+        <TekeningNummer>1</TekeningNummer>
+        <Opmerking />
+        <ProfielNummer>1</ProfielNummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Hoogte>9</Hoogte>
+      </Profiel>
+      <Profiel>
+        <ID>1e9b4e00-7fe0-4449-a3a4-02c2430620e1</ID>
+        <DatumIngemeten>2015-09-30T09:50:11</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>2014-07-21T09:39:42+02:00</DatumTekening>
+        <Tekening>true</Tekening>
+        <TekeningNummer>1</TekeningNummer>
+        <Opmerking />
+        <ProfielNummer>2</ProfielNummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Hoogte>9.01</Hoogte>
+      </Profiel>
+      <Profiel>
+        <ID>1d8b27f1-2a99-4be6-8491-472007a192a1</ID>
+        <DatumIngemeten>2015-09-30T10:02:07</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>2014-07-21T09:39:42+02:00</DatumTekening>
+        <Tekening>true</Tekening>
+        <TekeningNummer>1</TekeningNummer>
+        <Opmerking />
+        <ProfielNummer>3</ProfielNummer>
+        <Werkput>1</Werkput>
+        <Vlak>1</Vlak>
+        <Hoogte>9</Hoogte>
+      </Profiel>
+      <Profiel>
+        <ID>e411c0a6-43f6-4e5a-854b-abdce2c47a83</ID>
+        <DatumIngemeten>2015-09-30T11:40:34</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>2014-07-21T09:39:42+02:00</DatumTekening>
+        <Tekening>true</Tekening>
+        <TekeningNummer>1</TekeningNummer>
+        <Opmerking />
+        <ProfielNummer>4</ProfielNummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Hoogte>9.02</Hoogte>
+      </Profiel>
+      <Profiel>
+        <ID>91662a20-8032-4591-b1b4-9fb5e80fef5c</ID>
+        <DatumIngemeten>2015-09-30T11:42:29</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>2014-07-21T09:39:42+02:00</DatumTekening>
+        <Tekening>true</Tekening>
+        <TekeningNummer>1</TekeningNummer>
+        <Opmerking />
+        <ProfielNummer>5</ProfielNummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Hoogte>9.01</Hoogte>
+      </Profiel>
+      <Profiel>
+        <ID>e49bc339-4df9-42f6-9f55-e4aa01db7ff8</ID>
+        <DatumIngemeten>2015-09-30T11:43:54</DatumIngemeten>
+        <Ingemeten>true</Ingemeten>
+        <DatumFoto>2015-09-30T00:00:00</DatumFoto>
+        <Foto>true</Foto>
+        <DatumTekening>2014-07-21T09:39:42+02:00</DatumTekening>
+        <Tekening>true</Tekening>
+        <TekeningNummer>1</TekeningNummer>
+        <Opmerking />
+        <ProfielNummer>6</ProfielNummer>
+        <Werkput>2</Werkput>
+        <Vlak>1</Vlak>
+        <Hoogte>9.01</Hoogte>
+      </Profiel>
+    </Items>
+  </Profielen>
+  <Boringen>
+    <Items />
+  </Boringen>
+  <Tekeningen>
+    <Items>
+      <Tekening>
+        <ID>9ff46c8a-f662-445c-b084-455be392770d</ID>
+        <Bestandsnaam>15055560-P1</Bestandsnaam>
+        <Subpath>Profielen</Subpath>
+        <Extensie>.svg</Extensie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>a61d527a-1fcd-4edd-883d-560bf8c623bd</BestandID>
+        <Nummer>1</Nummer>
+        <TekeningType>Profiel</TekeningType>
+        <Schaal>1:20</Schaal>
+        <Tekenaar>S. Diependaal</Tekenaar>
+        <Datum>2015-10-08T16:12:21.1746649+02:00</Datum>
+        <OokAnaloog>false</OokAnaloog>
+      </Tekening>
+      <Tekening>
+        <ID>295c324b-7748-4dbf-861c-52206688dfe9</ID>
+        <Bestandsnaam>Vlaktekening</Bestandsnaam>
+        <Subpath>Vlaktekening</Subpath>
+        <Extensie>.qgs</Extensie>
+        <BestandsDatum>0001-01-01T00:00:00</BestandsDatum>
+        <BestandID>3f722939-6312-45e8-aae1-af6c16046a29</BestandID>
+        <Nummer>2</Nummer>
+        <TekeningType>Vlak</TekeningType>
+        <Schaal>1:1</Schaal>
+        <Tekenaar>S. Diependaal</Tekenaar>
+        <Datum>2015-10-19T12:01:35.5432107+02:00</Datum>
+        <OokAnaloog>false</OokAnaloog>
+      </Tekening>
+    </Items>
+  </Tekeningen>
+  <Documenten>
+    <Items>
+      <Document>
+        <ID>cc91f5a7-7a19-495d-8496-762d6cd58555</ID>
+        <Bestandsnaam>15035360 BRU.BOS.ARC.RAP (Locatie Radeland Brummen) versie C1</Bestandsnaam>
+        <Subpath>Documenten</Subpath>
+        <BestandsInhoud>Vooronderzoek</BestandsInhoud>
+        <Extensie>.pdf</Extensie>
+        <BestandsLocatie>A:\15055560\Documenten</BestandsLocatie>
+        <BestandsDatum>2015-06-16T13:42:34.5016613+02:00</BestandsDatum>
+        <BestandID>ffac1268-7706-4071-87bc-3b5c31043e12</BestandID>
+        <DocumentType>Vooronderzoek</DocumentType>
+        <Titel>Archeologisch bureauonderzoek en verkennend/karterend booronderzoek aan de Locatie Radeland te Brummen in de gemeente Brummen</Titel>
+        <AantalPaginas>70</AantalPaginas>
+        <Auteur1>E Broeke</Auteur1>
+        <Auteur2 />
+        <Auteur3 />
+        <Auteur4 />
+        <Uitgever>Econsultancy BV</Uitgever>
+        <JaarUitgave>2015</JaarUitgave>
+        <PlaatsUitgave>Doetinchem</PlaatsUitgave>
+        <Serie>Econsultancy rapport *ProjectnummerBureauonderzoek*</Serie>
+        <Issn>2210-8785</Issn>
+        <Isbn />
+        <OokAnaloog>false</OokAnaloog>
+        <Tebeschrijven>false</Tebeschrijven>
+      </Document>
+      <Document>
+        <ID>8ab05693-8297-45e5-aa58-570a3ab7ea53</ID>
+        <Bestandsnaam>15055555 BRU.BOS.APE Definitief en geheel ondertekend PvE Locatie Radeland te Brummen</Bestandsnaam>
+        <Subpath>Documenten</Subpath>
+        <BestandsInhoud>Programma van Eisen</BestandsInhoud>
+        <Extensie>.pdf</Extensie>
+        <BestandsLocatie>A:\15055560\Documenten</BestandsLocatie>
+        <BestandsDatum>2015-06-30T13:47:25.6250956+02:00</BestandsDatum>
+        <BestandID>ec79eeee-2073-48a9-9d03-f91d75d89a89</BestandID>
+        <DocumentType>PvE</DocumentType>
+        <Titel>Archeologisch Programma van Eisen (PvE) Locatie Radeland te Brummen in de gemeente Brummen</Titel>
+        <AantalPaginas>52</AantalPaginas>
+        <Auteur1>E Broeke</Auteur1>
+        <Auteur2 />
+        <Auteur3 />
+        <Auteur4 />
+        <Uitgever>Econsultancy BV</Uitgever>
+        <JaarUitgave>2015</JaarUitgave>
+        <PlaatsUitgave>Doetinchem</PlaatsUitgave>
+        <Serie />
+        <Issn />
+        <Isbn />
+        <OokAnaloog>true</OokAnaloog>
+        <Tebeschrijven>false</Tebeschrijven>
+      </Document>
+      <Document>
+        <ID>8cd65638-5234-4fc6-b371-0f36aa90b4c7</ID>
+        <Bestandsnaam>15055560 BRU.BOS.APO.RAP (Locatie Radeland Brummen) versie D1</Bestandsnaam>
+        <Subpath>Documenten</Subpath>
+        <BestandsInhoud>Eindrapport</BestandsInhoud>
+        <Extensie>.pdf</Extensie>
+        <BestandsLocatie>A:\15055560\Documenten</BestandsLocatie>
+        <BestandsDatum>2015-11-19T14:40:48.4213608+01:00</BestandsDatum>
+        <BestandID>e391d40d-81bc-44d4-bf4c-b6ccdba7cbe5</BestandID>
+        <DocumentType>Eindrapport</DocumentType>
+        <Titel>Proefsleuvenonderzoek (IVO-P) Locatie Radeland te Brummen in de gemeente Brummen</Titel>
+        <AantalPaginas>35</AantalPaginas>
+        <Auteur1>E. Louwe</Auteur1>
+        <Auteur2>P. Wemerman</Auteur2>
+        <Auteur3 />
+        <Auteur4 />
+        <Uitgever>Econsultancy BV</Uitgever>
+        <JaarUitgave>2015</JaarUitgave>
+        <PlaatsUitgave>Doetinchem</PlaatsUitgave>
+        <Serie>Econsultancy rapport 15055560</Serie>
+        <Issn>2210-8785</Issn>
+        <Isbn />
+        <OokAnaloog>true</OokAnaloog>
+        <Tebeschrijven>false</Tebeschrijven>
+      </Document>
+      <Document>
+        <ID>4c8691fb-a946-4989-9369-935b8cead13c</ID>
+        <Bestandsnaam>1d PvA</Bestandsnaam>
+        <Subpath>Documenten</Subpath>
+        <BestandsInhoud>Plan van Aanpak</BestandsInhoud>
+        <Extensie>.xml</Extensie>
+        <BestandsLocatie>A:\15055560\Documenten</BestandsLocatie>
+        <BestandsDatum>2015-09-28T13:43:10+02:00</BestandsDatum>
+        <BestandID>98cf7687-0b9c-4917-addd-4acc4086b917</BestandID>
+        <DocumentType>PvA</DocumentType>
+        <Titel>Plan van Aanpak Proefsleuvenonderzoek aan de Locatie Radeland te Brummen in de gemeente Brummen</Titel>
+        <AantalPaginas>4</AantalPaginas>
+        <Auteur1>E Broeke</Auteur1>
+        <Auteur2 />
+        <Auteur3 />
+        <Auteur4 />
+        <Uitgever>Econsultancy BV</Uitgever>
+        <JaarUitgave>2015</JaarUitgave>
+        <PlaatsUitgave>Doetinchem</PlaatsUitgave>
+        <Serie />
+        <Issn />
+        <Isbn />
+        <OokAnaloog>true</OokAnaloog>
+        <Tebeschrijven>false</Tebeschrijven>
+      </Document>
+      <Document>
+        <ID>1526df2c-8b67-420f-8e77-7a04ce1ae9fa</ID>
+        <Bestandsnaam>DeselectieFormulier</Bestandsnaam>
+        <Subpath>Documenten</Subpath>
+        <BestandsInhoud>Selectierapport</BestandsInhoud>
+        <Extensie>.pdf</Extensie>
+        <BestandsLocatie>A:\15055560\Documenten</BestandsLocatie>
+        <BestandsDatum>2015-11-20T13:08:25.9382631+01:00</BestandsDatum>
+        <BestandID>d8d529ec-7ab2-46a0-89e8-7b5f4785cf9f</BestandID>
+        <DocumentType>Selectierapport</DocumentType>
+        <Titel>Selectierapport Proefsleuvenonderzoek aan de Locatie Radeland te Brummen in de gemeente Brummen</Titel>
+        <AantalPaginas>1</AantalPaginas>
+        <Auteur1>E. Louwe</Auteur1>
+        <Auteur2 />
+        <Auteur3 />
+        <Auteur4 />
+        <Uitgever>Econsultancy BV</Uitgever>
+        <JaarUitgave>2015</JaarUitgave>
+        <PlaatsUitgave>Doetinchem</PlaatsUitgave>
+        <Serie />
+        <Issn />
+        <Isbn />
+        <OokAnaloog>true</OokAnaloog>
+        <Tebeschrijven>false</Tebeschrijven>
+      </Document>
+    </Items>
+  </Documenten>
+  <Dagrapporten>
+    <Items>
+      <Dagrapport>
+        <ID>be506050-ae01-4c79-b7ef-4bdb849a40aa</ID>
+        <Datum>2015-09-30T00:00:00</Datum>
+        <Auteur>
+          <ID>62114eec-8336-42b1-8daf-82ae2c3ec186</ID>
+          <Voornaam>Sander</Voornaam>
+          <Tussenvoegsel />
+          <Achternaam>Diependaal</Achternaam>
+          <NaamMetTitels>drs. S. Diependaal</NaamMetTitels>
+          <Voorletters>S.</Voorletters>
+          <Email>diependaal@econsultancy.nl</Email>
+          <Telefoon />
+          <Mobiel>0628039179</Mobiel>
+          <Mnmonic>SDi</Mnmonic>
+          <Functie>senior KNA-archeoloog</Functie>
+          <UitDienst>false</UitDienst>
+          <TelefoonZakelijk>0314 365150</TelefoonZakelijk>
+          <TelefoonPrive />
+        </Auteur>
+        <Medewerker1>
+          <ID>9f34bc62-7900-4e1b-8f6b-a87af9298841</ID>
+          <Voornaam>Emile</Voornaam>
+          <Tussenvoegsel>ten</Tussenvoegsel>
+          <Achternaam>Broeke</Achternaam>
+          <NaamMetTitels>Ir. E.M. ten Broeke</NaamMetTitels>
+          <Voorletters>E</Voorletters>
+          <Email>tenbroeke@econsultancy</Email>
+          <Mnmonic>ETb</Mnmonic>
+          <Functie>Senior fysisch geograaf</Functie>
+          <UitDienst>false</UitDienst>
+          <TelefoonZakelijk>0314-365150</TelefoonZakelijk>
+          <TelefoonPrive>0314-365150</TelefoonPrive>
+        </Medewerker1>
+        <AuteurString>Sander Diependaal</AuteurString>
+        <Medewerker1String>Emile ten Broeke</Medewerker1String>
+        <Medewerker2String />
+        <Medewerker3String />
+        <Medewerker4String />
+        <Medewerker5String />
+        <Aanvang>7.30</Aanvang>
+        <Einde>14.00</Einde>
+        <MachineUren>8</MachineUren>
+        <WerkUren>0</WerkUren>
+        <FacturabeleUren>16</FacturabeleUren>
+        <Temperatuur>15</Temperatuur>
+        <Neerslag>0</Neerslag>
+        <Bewolking>0</Bewolking>
+        <Windkracht>0</Windkracht>
+        <Bezoekers />
+        <Tekst>Vandaag 2 proefsleuven gegraven. Beide zijn beperkt aangepast t.o.v. het PvE dit om zo min mogelijk van de beplanting en ed huidige bestrating te vernielen. Proeflsuef 1 is aangelegd ter plaatse van de vijver. Hierin twee sporen aangetroffen. Beide van recente datum. Het betreft naar alle waarschijnljjkheid de insteek van de vijver. Het vlak is flink gebioturbeerd, maaar hierin zijn geen archeologisch relavante resten aangetroffen . Uit spoor 2 komt wel wat dateerbaar industrieel witgoed (vondst 1). Proefsleuf 2 is aangelegd in het Gazon. Van deze proefsleuf is de oostzijde vergraven(spoor 3) tot een aanzielijke diepte. UIt dit spoor komt ook industrieel witgoed (vondst 2) en in het vlak zijn de sporen van een tandenbak te herkennen. De westzijde van de proefsleuf is minder versttod, het vlak is hier al hoger aangetroffen maar ook hierin geen archeologisch relevante resten. Er lijkt hier sprake te zijn van een A/C profiel.
+
+
+
+Het lijkt erop dat het plangebied ligt op een relatief lage locatie. Dit op basis van de geel witte ondergrond en de beekeerdachtige bodemopbouw in proefsleuf 1. DE natuurlijke ondergrond bestaat uit matig fijn zand.
+
+
+
+
+
+Bug in minerva met het importeren van de meetgegevens. Verder geen bijzonderheden bij dit project. Rond het middaguur het veldwerk afgerond.Werkput 1,2 ingemeten.
+Werkput 1,2 gefotografeerd.
+Spoor 1-3 ingemeten.
+Vondst 1,2 ingemeten.
+
+Profiel 1-6 ingemeten.
+Profiel 1-6 gefotografeerd.
+</Tekst>
+      </Dagrapport>
+    </Items>
+  </Dagrapporten>
+  <Weekrapporten>
+    <Items>
+      <Weekrapport>
+        <ID>6d1e7f09-6eba-4b50-ac23-6ed32c65e221</ID>
+        <Datum>2015-10-02T00:00:00</Datum>
+        <Week>40</Week>
+        <AuteurString>Erik Louwe</AuteurString>
+        <Tekst>nvt</Tekst>
+      </Weekrapport>
+    </Items>
+  </Weekrapporten>
+  <Vindplaatsen>
+    <Items />
+  </Vindplaatsen>
+  <Structuren>
+    <Items />
+  </Structuren>
+  <XMLVersion>3</XMLVersion>
+  <LaatsteProfieltekeningNr>0</LaatsteProfieltekeningNr>
+</Project>

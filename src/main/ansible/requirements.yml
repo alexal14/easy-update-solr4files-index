@@ -18,4 +18,6 @@
   version: v2.1.1
 - src: https://github.com/DANS-KNAW/dans.local-test-vm-base
   version: v2.1.1
+- src: https://github.com/DANS-KNAW/dans.solr
+  version: 3.6.3-dans
 
