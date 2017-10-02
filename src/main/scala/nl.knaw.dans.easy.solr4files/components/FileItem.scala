@@ -44,6 +44,8 @@ case class FileItem(bag: Bag, ddm: DDM, xml: Node) extends DebugEnhancedLogging 
     // without a path we can't create a solrID nor fetch the content
     // multiple or otherwise garbage access rights is treated as "NONE": don't index
     path.nonEmpty && accessible.contains(accessibleTo)
+    // TODO drop the next line when the query side implements authorisation
+    path.nonEmpty && accessibleTo == anonymous
   }
 
   val mimeType: String = (xml \ "format").text
