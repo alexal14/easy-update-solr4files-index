@@ -19,18 +19,17 @@ import java.net.{ URI, URL, URLEncoder }
 import java.nio.file.Paths
 import java.util.UUID
 
-import nl.knaw.dans.easy.solr4files._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 
 import scala.util.Try
 
-trait Vault extends DebugEnhancedLogging {
+trait Vault extends DebugEnhancedLogging with ReaderComponent {
   val vaultBaseUri: URI
 
   def getStoreNames: Try[Seq[String]] = for {
     uri <- Try(vaultBaseUri.resolve("stores"))
     _ = logger.info(s"getting storeNames with $uri")
-    lines <- uri.toURL.readLines
+    lines <- reader.readLines(uri.toURL)
   } yield lines.map { line =>
     val trimmed = line.trim.replace("<", "").replace(">", "")
     Paths
@@ -41,13 +40,13 @@ trait Vault extends DebugEnhancedLogging {
   def getBagIds(storeName: String): Try[Seq[UUID]] = for {
   // no state param (in fact no param at all) so we just get the active bags
     storeURI <- Try(vaultBaseUri.resolve(s"stores/$storeName/bags"))
-    lines <- storeURI.toURL.readLines
+    lines <- reader.readLines(storeURI.toURL)
   } yield lines
     .withFilter(_.trim.nonEmpty)
     .map(str => UUID.fromString(str.trim))
 
   def getSize(storeName: String, bagId: UUID, path: String): Long = {
-    fileURL(storeName, bagId, path).map(_.getContentLength).getOrElse(-1L)
+    fileURL(storeName, bagId, path).map(reader.getContentLength).getOrElse(-1L)
   }
 
   def fileURL(storeName: String, bagId: UUID, file: String): Try[URL] = Try {

@@ -15,19 +15,16 @@
  */
 package nl.knaw.dans.easy
 
-import java.io.File
-import java.net.{ URL, URLDecoder }
+import java.net.URL
 
-import nl.knaw.dans.lib.error._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
-import org.apache.commons.io.FileUtils.readFileToString
 import org.apache.solr.common.util.NamedList
 
 import scala.annotation.tailrec
 import scala.collection.mutable
 import scala.util.{ Failure, Success, Try }
-import scala.xml.{ Elem, Node, XML }
-import scalaj.http.{ Http, HttpResponse }
+import scala.xml.Node
+import scalaj.http.HttpResponse
 
 package object solr4files extends DebugEnhancedLogging {
 
@@ -118,40 +115,6 @@ package object solr4files extends DebugEnhancedLogging {
     def isUrl: Boolean = {
       Try(new URL(left.text)).isSuccess
     }
-  }
-
-  implicit class RichURL(val left: URL) {
-
-    def loadXml: Try[Elem] = {
-      getContent.flatMap(s => Try(XML.loadString(s)))
-    }
-
-    def readLines: Try[Seq[String]] = {
-      getContent.map(_.split("\n"))
-    }
-
-    private def getContent: Try[String] = {
-      if (left.getProtocol.toLowerCase == "file") {
-        val path = URLDecoder.decode(left.getPath, "UTF8")
-        Try(readFileToString(new File(path), "UTF8"))
-      }
-      else Try(Http(left.toString).method("GET").asString).flatMap {
-        case response if response.isSuccess => Success(response.body)
-        case response => Failure(HttpStatusException(s"getContent($left)", response))
-      }
-    }
-
-    def getContentLength: Long = {
-      if (left.getProtocol.toLowerCase == "file")
-        Try(new File(left.getPath).length)
-      else {
-        Try(Http(left.toString).method("HEAD").asString).flatMap {
-          case response if response.isSuccess => Try(response.headers("content-length").toLong)
-          case response => Failure(HttpStatusException(s"getSize($left)", response))
-        }
-      }
-    }.doIfFailure { case e => logger.warn(e.getMessage, e) }
-      .getOrElse(-1L)
   }
 
   implicit class TryExtensions2[T](val t: Try[T]) extends AnyVal {

@@ -19,14 +19,14 @@ import java.util.UUID
 
 import nl.knaw.dans.easy.solr4files.{ TestSupportFixture, _ }
 
-class DDMSpec extends TestSupportFixture {
+class DDMSpec extends TestSupportFixture with FileReaderComponent {
 
   private val vault = mockVault("vault")
 
   "solrLiteral" should "return proper values" in {
     assume(canConnectToEasySchemas)
     val uuid = UUID.fromString("9da0541a-d2c8-432e-8129-979a9830b427")
-    val xml = vault.fileURL("pdbs", uuid, "metadata/dataset.xml").flatMap(_.loadXml).getOrElse(<ddm/>)
+    val xml = vault.fileURL("pdbs", uuid, "metadata/dataset.xml").flatMap(reader.loadXml).getOrElse(<ddm/>)
 
     val ddm = new DDM(xml)
     ddm.accessRights shouldBe "OPEN_ACCESS"

@@ -18,7 +18,7 @@ package nl.knaw.dans.easy.solr4files
 import java.net.{ HttpURLConnection, URI, URL, URLEncoder }
 import java.nio.file.{ Files, Path, Paths }
 
-import nl.knaw.dans.easy.solr4files.components.Vault
+import nl.knaw.dans.easy.solr4files.components.{ FileReaderComponent, Vault }
 import org.apache.commons.configuration.PropertiesConfiguration
 import org.apache.commons.io.FileUtils
 import org.scalatest.{ BeforeAndAfterEach, FlatSpec, Inside, Matchers }
@@ -42,7 +42,7 @@ trait TestSupportFixture extends FlatSpec with Matchers with Inside with BeforeA
     })
   }
 
-  def mockVault(testVault: String): Vault = new Vault {
+  def mockVault(testVault: String): Vault = new Vault with FileReaderComponent {
     // testVault/store is sometimes a folder, sometimes a dir and most importantly used read-only
     // no need to copy into testDir/vault used as vaultBaseDir
     private val vaultBaseDir = URLEncoder.encode(Paths.get(s"src/test/resources/$testVault").toAbsolutePath.toString, "UTF8")

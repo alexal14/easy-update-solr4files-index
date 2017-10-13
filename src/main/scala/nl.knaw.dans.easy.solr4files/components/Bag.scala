@@ -18,7 +18,7 @@ package nl.knaw.dans.easy.solr4files.components
 import java.net.URL
 import java.util.UUID
 
-import nl.knaw.dans.easy.solr4files.{ FileToShaMap, SolrLiterals, _ }
+import nl.knaw.dans.easy.solr4files.{ FileToShaMap, SolrLiterals }
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 
 import scala.util.Try
@@ -34,7 +34,7 @@ case class Bag(storeName: String,
     val key = "EASY-User-Account"
     for {
       url <- vault.fileURL(storeName, bagId, "bag-info.txt")
-      lines <- url.readLines
+      lines <- vault.reader.readLines(url)
     } yield lines
       .filter(_.trim.startsWith(key))
       .map(_.replace(key, "").replace(":", "").trim)
@@ -55,7 +55,7 @@ case class Bag(storeName: String,
     // gov.loc.repository.bagit.reader.ManifestReader reads files, we need URL or stream
     for {
       url <- vault.fileURL(storeName, bagId, "manifest-sha1.txt")
-      lines <- url.readLines
+      lines <- vault.reader.readLines(url)
     } yield lines.map { line: String =>
       val regex(sha, path) = line.trim
       (path, sha)
@@ -68,11 +68,11 @@ case class Bag(storeName: String,
 
   def loadDDM: Try[Elem] = vault
     .fileURL(storeName, bagId, "metadata/dataset.xml")
-    .flatMap(_.loadXml)
+    .flatMap(vault.reader.loadXml)
 
   def loadFilesXML: Try[Elem] = vault
     .fileURL(storeName, bagId, "metadata/files.xml")
-    .flatMap(_.loadXml)
+    .flatMap(vault.reader.loadXml)
 
   val solrLiterals: SolrLiterals = Seq(
     ("dataset_store_id", storeName),

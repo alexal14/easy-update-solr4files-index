@@ -74,7 +74,7 @@ class DDM(xml: Node) extends DebugEnhancedLogging {
   }
 }
 
-object DDM {
+object DDM extends HttpReaderComponent {
 
   private val abrPrefix = "abr:ABR"
 
@@ -134,7 +134,7 @@ object DDM {
   private def loadVocabularies(xsdURL: String): Map[String, VocabularyMap] = {
     for {
       url <- Try(new URL(xsdURL))
-      xml <- url.loadXml
+      xml <- reader.loadXml(url)
     } yield (xml \ "simpleType")
       .map(n => (mapName(n), findKeyValuePairs(n)))
       .toMap
