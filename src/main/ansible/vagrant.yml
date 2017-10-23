@@ -91,13 +91,16 @@
 ########### solr
 
 - hosts: "test"
-  vars: # also implicitly used by included dans.solr
+  vars:
     solr_install_dir: "/opt/org.apache"
     solr_var_dir: "/var/opt/org.apache"
     solr_home: "{{ solr_var_dir }}/solr-home"
     solr_log_dir: "{{ solr_var_dir }}/log/solr"
-    solr_cores:
-      - { name: "fileitems", confdir: "sample_techproducts_configs" }
+    solr_core: "fileitems"
+    solr_core_src: "../assembly/dist/install/{{ solr_core }}"
+    solr_core_dest: "{{ solr_var_dir }}/solr-home/data/{{ solr_core }}/conf"
+    solr_cores: # implicitly used by included dans.solr
+      - { name: "{{ solr_core }}", confdir: "sample_techproducts_configs" }
   become: yes
   tasks:
 
@@ -119,12 +122,18 @@
       solr_version: "6.6.1"
       solr_package: "http://maven-repo.dans.knaw.nl/ext-release-local/org/apache/solr/{{ solr_version }}/solr-{{ solr_version }}.tgz"
 
-  # TODO fix problem that gives itself away with 'attr_' prefix for field names in the index
-  - name: Copy schemas
+  - name: Copy solr core configuration
     copy:
-      src: "../assembly/dist/install/{{ item.name }}/schema.xml"
-      dest: "{{ solr_var_dir }}/solr-home/data/{{ item.name }}/conf/"
-    with_items: "{{ solr_cores }}"
+      src: "{{ solr_core_src }}/{{ item }}"
+      dest: "{{ solr_core_dest }}/"
+    with_items:
+      - "schema.xml"
+      - "solrconfig.xml"
+
+  - name: Remove (disable) managed schemas
+    file:
+      path: "{{ solr_core_dest }}/managed-schema"
+      state: absent
 
   - service:
       name: "solr"
