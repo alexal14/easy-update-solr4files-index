@@ -55,7 +55,7 @@ class SolrErrorHandlingSpec extends TestSupportFixture
   }
 
   private val app = new EasyUpdateSolr4filesIndexApp(new StubbedWiring)
-  addServlet(new EasyUpdateSolr4filesIndexServlet(app), "/*")
+  addServlet(new UpdateServlet(app), "/*")
 
   "delete" should "return the exception bubbling up from solrClient.deleteByQuery" in {
     delete("/?q=:") {

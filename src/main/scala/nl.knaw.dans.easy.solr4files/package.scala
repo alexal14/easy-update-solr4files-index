@@ -48,6 +48,9 @@ package object solr4files extends DebugEnhancedLogging {
   case class SolrDeleteException(query: String, cause: Throwable)
     extends Exception(s"solr delete [$query] failed with ${ cause.getMessage }", cause)
 
+  case class SolrSearchException(query: String, cause: Throwable)
+    extends Exception(s"solr query [$query] failed with ${ cause.getMessage }", cause)
+
   case class SolrUpdateException(solrId: String, cause: Throwable)
     extends Exception(s"solr update of file $solrId failed with ${ cause.getMessage }", cause)
 

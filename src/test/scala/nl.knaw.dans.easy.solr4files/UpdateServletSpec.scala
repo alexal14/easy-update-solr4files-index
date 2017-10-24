@@ -38,7 +38,7 @@ class UpdateServletSpec extends TestSupportFixture
     }
   } with EasyUpdateSolr4filesIndexApp(new ApplicationWiring(new Configuration("", properties)))
   private val app = mock[App]
-  addServlet(new EasyUpdateSolr4filesIndexServlet(app), "/*")
+  addServlet(new UpdateServlet(app), "/*")
 
   private val uuid = UUID.randomUUID()
 

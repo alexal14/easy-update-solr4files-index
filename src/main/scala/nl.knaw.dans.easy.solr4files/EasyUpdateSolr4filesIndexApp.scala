@@ -18,6 +18,8 @@ package nl.knaw.dans.easy.solr4files
 import java.util.UUID
 
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
+import org.apache.solr.client.solrj.SolrQuery
+import org.apache.solr.client.solrj.response.QueryResponse
 
 import scala.util.{ Success, Try }
 
@@ -31,6 +33,8 @@ class EasyUpdateSolr4filesIndexApp(wiring: ApplicationWiring) extends AutoClosea
   def update(storeName: String, bagId: UUID): Try[String] = wiring.update(storeName, bagId).map(_.toString)
 
   def delete(query: String): Try[String] = wiring.delete(query)
+
+  def search(query: SolrQuery): Try[String] = wiring.search(query)
 
   def init(): Try[Unit] = {
     // Do any initialization of the application here. Typical examples are opening

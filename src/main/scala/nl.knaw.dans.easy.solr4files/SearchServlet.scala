@@ -15,17 +15,16 @@
  */
 package nl.knaw.dans.easy.solr4files
 
-import java.util.UUID
-
 import nl.knaw.dans.lib.error._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 import org.apache.http.HttpStatus._
+import org.apache.solr.client.solrj.SolrQuery
 import org.scalatra._
 
 import scala.util.Try
 import scalaj.http.HttpResponse
 
-class EasyUpdateSolr4filesIndexServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet with DebugEnhancedLogging {
+class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet with DebugEnhancedLogging {
   logger.info("File index Servlet running...")
 
   get("/") {
@@ -42,48 +41,34 @@ class EasyUpdateSolr4filesIndexServlet(app: EasyUpdateSolr4filesIndexApp) extend
         case HttpStatusException(message, r: HttpResponse[String]) if r.code == SC_NOT_FOUND => NotFound(message)
         case HttpStatusException(message, r: HttpResponse[String]) if r.code == SC_SERVICE_UNAVAILABLE => ServiceUnavailable(message)
         case HttpStatusException(message, r: HttpResponse[String]) if r.code == SC_REQUEST_TIMEOUT => RequestTimeout(message)
-        case MixedResultsException(_, HttpStatusException(message, r: HttpResponse[String])) if r.code == SC_NOT_FOUND => NotFound(msgPrefix + message)
-        case MixedResultsException(_, HttpStatusException(message, r: HttpResponse[String])) if r.code == SC_SERVICE_UNAVAILABLE => ServiceUnavailable(msgPrefix + message)
-        case MixedResultsException(_, HttpStatusException(message, r: HttpResponse[String])) if r.code == SC_REQUEST_TIMEOUT => RequestTimeout(msgPrefix + message)
-        case e => InternalServerError(e.getMessage) // TODO no or neutral message for to be implemented public search
+        case e => InternalServerError()
       }
   }
 
-  private def getUUID = {
-    Try { UUID.fromString(params("uuid")) }
-  }
+  // injection: https://packetstormsecurity.com/files/144678/apachesolr701-xxe.txt
+  // https://lucene.apache.org/solr/guide/6_6/query-syntax-and-parsing.html
+  // lucene seems not safe: Support for using any type of query parser as a nested clause
+  // edismax: supports the full Lucene query parser syntax, so possibly not safe too
+  // dismax: more like [...] Google [...] makes [...] appropriate [...] for many consumer applications
+  private val queryParser = "dismax"
 
-  private def badUuid(e: Throwable) = {
-    BadRequest(e.getMessage)
-  }
-
-  post("/update/:store/:uuid") {
-    getUUID
-      .map(uuid => respond(app.update(params("store"), uuid)))
-      .getOrRecover(badUuid)
-  }
-
-  post("/init") {
-    respond(app.initAllStores())
-  }
-
-  post("/init/:store") {
-    respond(app.initSingleStore(params("store")))
-  }
-
-  delete("/:store/:uuid") {
-    getUUID
-      .map(uuid => respond(app.delete(s"easy_dataset_id:$uuid")))
-      .getOrRecover(badUuid)
-  }
-
-  delete("/:store") {
-    respond(app.delete(s"easy_dataset_store_id:${ params("store") }"))
-  }
-
-  delete("/") {
+  get("/") {
     params.get("q")
-      .map(q => respond(app.delete(q)))
-      .getOrElse(BadRequest(s"delete requires param 'q': a solr query"))
+      .map(q => respond(app.search(createQuery(q))))
+      .getOrElse(BadRequest(s"delete requires param 'q': a solr $queryParser query"))
+  }
+
+  private def createQuery(query: String) = {
+    new SolrQuery() {
+      setQuery(query)
+      addFilterQuery("easy_file_accessible_to:ANONYMOUS + easy_file_accessible_to:KNOWN")
+      setFields("easy_dataset_*", "easy_file_*")
+      setStart(0)
+      setRows(10)
+      setTimeAllowed(5000) // 5 seconds TODO make configurable
+      // setFacet... setMoreLikeThis... setHighlight... setDebug... etc
+
+      set("defType", queryParser)
+    }
   }
 }
