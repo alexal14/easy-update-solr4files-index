@@ -52,6 +52,7 @@ object Command extends App with DebugEnhancedLogging {
       }
       .getOrElse(Failure(new IllegalArgumentException(s"Unknown command: ${ commandLine.subcommand }")))
   }
+
   private def runAsService(): Try[FeedBackMessage] = Try {
     val server = new EasyUpdateSolr4filesIndexService(configuration.properties.getInt("solr4files.daemon.http.port"), app)
     Runtime.getRuntime.addShutdownHook(new Thread("service-shutdown") {

@@ -27,7 +27,7 @@ import org.apache.solr.client.solrj.request.ContentStreamUpdateRequest
 import org.apache.solr.client.solrj.response.{ SolrResponseBase, UpdateResponse }
 import org.apache.solr.client.solrj.{ SolrClient, SolrQuery }
 import org.apache.solr.common.util.{ ContentStreamBase, NamedList }
-import org.apache.solr.common.{ SolrDocument, SolrDocumentList, SolrInputDocument }
+import org.apache.solr.common.{ SolrDocumentList, SolrInputDocument }
 import org.json4s._
 import org.json4s.native.Serialization
 import org.json4s.native.Serialization._

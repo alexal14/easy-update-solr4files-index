@@ -19,7 +19,6 @@ import java.util.UUID
 
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 import org.apache.solr.client.solrj.SolrQuery
-import org.apache.solr.client.solrj.response.QueryResponse
 
 import scala.util.{ Success, Try }
 

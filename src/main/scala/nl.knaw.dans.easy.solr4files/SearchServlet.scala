@@ -50,7 +50,7 @@ class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
   get("/") {
     params.get("text")
       .map(q => respond(app.search(createQuery(q))))
-      .getOrElse(BadRequest("filesearch requires param 'text' (a solr dismax query), got " + params.mkString("[",",","]")))
+      .getOrElse(BadRequest("filesearch requires param 'text' (a solr dismax query), got " + params.mkString("[", ",", "]")))
   }
 
   private def createQuery(query: String) = {
