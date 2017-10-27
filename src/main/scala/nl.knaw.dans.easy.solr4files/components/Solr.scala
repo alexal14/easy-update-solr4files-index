@@ -23,11 +23,15 @@ import org.apache.http.HttpStatus._
 import org.apache.solr.client.solrj.SolrRequest.METHOD
 import org.apache.solr.client.solrj.impl.HttpSolrClient
 import org.apache.solr.client.solrj.request.ContentStreamUpdateRequest
-import org.apache.solr.client.solrj.response.{ QueryResponse, SolrResponseBase, UpdateResponse }
+import org.apache.solr.client.solrj.response.{ SolrResponseBase, UpdateResponse }
 import org.apache.solr.client.solrj.{ SolrClient, SolrQuery }
-import org.apache.solr.common.SolrInputDocument
 import org.apache.solr.common.util.{ ContentStreamBase, NamedList }
+import org.apache.solr.common.{ SolrDocumentList, SolrInputDocument }
+import org.json4s._
+import org.json4s.native.Serialization
+import org.json4s.native.Serialization._
 
+import scala.collection.JavaConverters._
 import scala.language.postfixOps
 import scala.util.{ Failure, Success, Try }
 
@@ -67,19 +71,33 @@ trait Solr extends DebugEnhancedLogging {
           Failure(SolrDeleteException(query, t))
       }
   }
-
-  def toJson(response: QueryResponse): String = ???
+  private def toJson(solrDocumentList: SolrDocumentList, limit: Int): Try[String] = {
+    // asScala is not good enough, serialization needs pure scala objects
+    val solrDocsAsScalaMaps = (0L until solrDocumentList.getNumFound).map { i =>
+      val kvs = solrDocumentList.get(i.toInt).getFieldValueMap
+      kvs.keySet().asScala.map(key => key -> kvs.get(key))
+    }
+    Try(write(Map(
+      "found" -> solrDocumentList.getNumFound,
+      "skip" -> solrDocumentList.getStart,
+      "max_score" -> solrDocumentList.getMaxScore,
+      "limit" -> limit,
+      "fileitems" -> solrDocsAsScalaMaps
+    ))(Serialization.formats(NoTypeHints))) //TODO add hint once we support available date
+  }
 
   def search(query: SolrQuery): Try[String] = {
-    Try(solrClient.query(query))
-      .flatMap(checkResponseStatus)
-      .map(toJson)
-      .recoverWith {
-        case t: HttpSolrClient.RemoteSolrException if isPareException(t) =>
-          Failure(SolrBadRequestException(t.getMessage, t))
-        case t =>
-          Failure(SolrSearchException(query.toQueryString, t))
-      }
+    (for {
+      response <- Try(solrClient.query(query))
+      _ <- checkResponseStatus(response)
+      json <- toJson(response.getResults, query.getRows)
+    } yield json).recoverWith {
+      case t: HttpSolrClient.RemoteSolrException if isPareException(t) =>
+        Failure(SolrBadRequestException(t.getMessage, t))
+      case t =>
+        t.printStackTrace()
+        Failure(SolrSearchException(query.toQueryString, t))
+    }
   }
 
   private def isPareException(t: HttpSolrClient.RemoteSolrException) = {

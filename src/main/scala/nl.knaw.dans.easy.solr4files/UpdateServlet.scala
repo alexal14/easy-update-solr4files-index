@@ -84,6 +84,6 @@ class UpdateServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
   delete("/") {
     params.get("q")
       .map(q => respond(app.delete(q)))
-      .getOrElse(BadRequest(s"delete requires param 'q': a solr query"))
+      .getOrElse(BadRequest("delete requires param 'q': got " + params.mkString("[",",","]")))
   }
 }

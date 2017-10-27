@@ -27,11 +27,6 @@ import scalaj.http.HttpResponse
 class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet with DebugEnhancedLogging {
   logger.info("File index Servlet running...")
 
-  get("/") {
-    contentType = "text/plain"
-    Ok("EASY File Index is running.")
-  }
-
   private def respond(result: Try[String]): ActionResult = {
     val msgPrefix = "Log files should show which actions succeeded. Finally failed with: "
     result.map(Ok(_))
@@ -53,15 +48,16 @@ class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
   private val queryParser = "dismax"
 
   get("/") {
-    params.get("q")
+    params.get("text")
       .map(q => respond(app.search(createQuery(q))))
-      .getOrElse(BadRequest(s"delete requires param 'q': a solr $queryParser query"))
+      .getOrElse(BadRequest("filesearch requires param 'text' (a solr dismax query), got " + params.mkString("[",",","]")))
   }
 
   private def createQuery(query: String) = {
     new SolrQuery() {
       setQuery(query)
       addFilterQuery("easy_file_accessible_to:ANONYMOUS + easy_file_accessible_to:KNOWN")
+      // TODO filter query on available date
       setFields("easy_dataset_*", "easy_file_*")
       setStart(0)
       setRows(10)

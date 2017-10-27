@@ -145,7 +145,7 @@ class UpdateServletSpec extends TestSupportFixture
 
   it should "complain about the required query" in {
     delete("/") {
-      body shouldBe "delete requires param 'q': a solr query"
+      body shouldBe "delete requires param 'q': got []"
       status shouldBe SC_BAD_REQUEST
     }
   }
