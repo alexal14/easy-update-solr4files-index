@@ -72,7 +72,24 @@ class SearchServletSpec extends TestSupportFixture
 
   it should "return json" in {
     get(s"/?text=nothing") {
-      body shouldBe """{"found":2,"skip":0,"limit":10,"fileitems":[[{"x":"y"}],[{"a":"b"},{"c":"d"}]]}"""
+      // random order for
+      // {"header":{"skip":0,"text":"nothing","found":2,"time_allowed":5000,"limit":10},"fileitems":[[{"x":"y"}],[{"a":"b"},{"c":"d"}]]}
+      body should startWith("""{""")
+      body should include(""""header":{"""")
+      body should include(""""skip":0""")
+      body should include(""""text":"nothing"""")
+      body should include(""""found":2""")
+      body should include(""""time_allowed":5000""")
+      body should include(""""limit":10""")
+      body should include("""},"""")
+      body should include(""""fileitems":[[{"""")
+      body should include("""[{"x":"y"}]""")
+      body should include("""],[""")
+      body should include("""{"a":"b"}""")
+      body should include("""},{""")
+      body should include("""{"c":"d"}""")
+      body should include(""""}]]""")
+      body should endWith("""}""")
       status shouldBe SC_OK
     }
   }

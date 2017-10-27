@@ -16,6 +16,7 @@
 package nl.knaw.dans.easy.solr4files.components
 
 import java.net.URL
+import java.util
 
 import nl.knaw.dans.easy.solr4files._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
@@ -26,7 +27,7 @@ import org.apache.solr.client.solrj.request.ContentStreamUpdateRequest
 import org.apache.solr.client.solrj.response.{ SolrResponseBase, UpdateResponse }
 import org.apache.solr.client.solrj.{ SolrClient, SolrQuery }
 import org.apache.solr.common.util.{ ContentStreamBase, NamedList }
-import org.apache.solr.common.{ SolrDocumentList, SolrInputDocument }
+import org.apache.solr.common.{ SolrDocument, SolrDocumentList, SolrInputDocument }
 import org.json4s._
 import org.json4s.native.Serialization
 import org.json4s.native.Serialization._
@@ -71,18 +72,24 @@ trait Solr extends DebugEnhancedLogging {
           Failure(SolrDeleteException(query, t))
       }
   }
-  private def toJson(solrDocumentList: SolrDocumentList, limit: Int): Try[String] = {
-    // asScala is not good enough, serialization needs pure scala objects
-    val solrDocsAsScalaMaps = (0L until solrDocumentList.getNumFound).map { i =>
-      val kvs = solrDocumentList.get(i.toInt).getFieldValueMap
-      kvs.keySet().asScala.map(key => key -> kvs.get(key))
+
+  private def toJson(solrDocumentList: SolrDocumentList, query: SolrQuery): Try[String] = {
+    def toScalaMap(fieldValueMap: util.Map[String, AnyRef]) = {
+      // asScala is not good enough, serialization needs scala case classes
+      // less verbose than TypeHints, after all we need only one direction
+      fieldValueMap.keySet().asScala.map(key => key -> fieldValueMap.get(key))
     }
-    Try(write(Map(
-      "found" -> solrDocumentList.getNumFound,
-      "skip" -> solrDocumentList.getStart,
-      "max_score" -> solrDocumentList.getMaxScore,
-      "limit" -> limit,
-      "fileitems" -> solrDocsAsScalaMaps
+
+    val found = solrDocumentList.getNumFound
+    Try(write(Map("header" -> Map(
+      "text" -> query.getQuery,
+      "skip" -> query.getStart,
+      "limit" -> query.getRows,
+      "time_allowed" -> query.getTimeAllowed,
+      "found" -> found
+    ), "fileitems" -> (0L until found).map { i =>
+      toScalaMap(solrDocumentList.get(i.toInt).getFieldValueMap)
+    }
     ))(Serialization.formats(NoTypeHints))) //TODO add hint once we support available date
   }
 
@@ -90,7 +97,7 @@ trait Solr extends DebugEnhancedLogging {
     (for {
       response <- Try(solrClient.query(query))
       _ <- checkResponseStatus(response)
-      json <- toJson(response.getResults, query.getRows)
+      json <- toJson(response.getResults, query)
     } yield json).recoverWith {
       case t: HttpSolrClient.RemoteSolrException if isPareException(t) =>
         Failure(SolrBadRequestException(t.getMessage, t))
