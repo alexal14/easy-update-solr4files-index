@@ -17,11 +17,19 @@ package nl.knaw.dans.easy
 
 import java.io.File
 import java.net.{ URL, URLDecoder }
+import java.util
 
 import nl.knaw.dans.lib.error._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 import org.apache.commons.io.FileUtils.readFileToString
 import org.apache.solr.common.util.NamedList
+import org.{ json4s, scalatra }
+import org.json4s.JField
+
+import scala.collection.JavaConverters._
+import org.json4s.JsonDSL._
+import org.json4s._
+import org.json4s.native.JsonMethods._
 
 import scala.annotation.tailrec
 import scala.collection.mutable
@@ -60,7 +68,6 @@ package object solr4files extends DebugEnhancedLogging {
   case class MixedResultsException[T](results: Seq[T], thrown: Throwable)
   // TODO evolve into candidate for dans.lib.error with takeUntilFailure
     extends Exception(thrown.getMessage, thrown)
-
   implicit class RichTryStream[T](val left: Seq[Try[T]]) extends AnyVal {
 
     /** Typical usage: toStream.map(TrySomething).takeUntilFailure */
@@ -95,6 +102,11 @@ package object solr4files extends DebugEnhancedLogging {
       val xs = results.groupBy(_.getClass.getSimpleName)
       s"Bag $msg: ${ xs.keySet.map(className => s"${ xs(className).size } times $className").mkString(", ") }"
     }
+  }
+
+  implicit class RichParams (val left: scalatra.Params ) extends AnyVal{
+    def got: String = if (left.isEmpty) "got no params at all"
+                      else "got params " + left.mkString("[", ",", "]")
   }
 
   val xsiURI = "http://www.w3.org/2001/XMLSchema-instance"

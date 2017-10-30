@@ -49,11 +49,12 @@ class SearchServletSpec extends TestSupportFixture
           setNumFound(2)
           setStart(0)
           add(new SolrDocument(new java.util.HashMap[String, AnyRef] {
-            put("x", "y")
+            put("name", "file.txt")
           }))
-          add(new SolrDocument(new java.util.HashMap[String, AnyRef] {
-            put("a", "b")
-            put("c", "d") // TODO try date once we have a typeHint for the json serialization
+          add(new SolrDocument(new java.util.TreeMap[String, AnyRef] {
+            // a sorted order makes testing easier
+            put("name", "some.png")
+            put("size", "123") // TODO date?
           }))
         }
       }
@@ -65,31 +66,32 @@ class SearchServletSpec extends TestSupportFixture
 
   "get /" should "complain about missing argument" in {
     get("/?q=something") {
-      body shouldBe "filesearch requires param 'text' (a solr dismax query), got [q -> something]"
+      body shouldBe "filesearch requires param 'text' (a solr dismax query), got params [q -> something]"
       status shouldBe SC_BAD_REQUEST
     }
   }
 
   it should "return json" in {
     get(s"/?text=nothing") {
-      // random order for
-      // {"header":{"skip":0,"text":"nothing","found":2,"time_allowed":5000,"limit":10},"fileitems":[[{"x":"y"}],[{"a":"b"},{"c":"d"}]]}
-      body should startWith("""{""")
-      body should include(""""header":{"""")
-      body should include(""""skip":0""")
-      body should include(""""text":"nothing"""")
-      body should include(""""found":2""")
-      body should include(""""time_allowed":5000""")
-      body should include(""""limit":10""")
-      body should include("""},"""")
-      body should include(""""fileitems":[[{"""")
-      body should include("""[{"x":"y"}]""")
-      body should include("""],[""")
-      body should include("""{"a":"b"}""")
-      body should include("""},{""")
-      body should include("""{"c":"d"}""")
-      body should include(""""}]]""")
-      body should endWith("""}""")
+      body should startWith("""{
+                              |  "header":{
+                              |    "text":"nothing",
+                              |    "skip":0,
+                              |    "limit":10,
+                              |    "time_allowed":5000,
+                              |    "found":2
+                              |  },
+                              |  "fileitems":[{""".stripMargin)
+      body should include("""{
+                            |    "name":"file.txt"
+                            |  }""".stripMargin)
+      body should include("""{
+                            |    "name":"some.png",
+                            |    "size":"123"
+                            |  }""".stripMargin)
+      body should endWith(""""
+                            |  }]
+                            |}""".stripMargin)
       status shouldBe SC_OK
     }
   }

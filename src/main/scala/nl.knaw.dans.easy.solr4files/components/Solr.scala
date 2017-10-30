@@ -19,6 +19,7 @@ import java.net.URL
 import java.util
 
 import nl.knaw.dans.easy.solr4files._
+import nl.knaw.dans.easy.solr4files.components.Solr._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 import org.apache.http.HttpStatus._
 import org.apache.solr.client.solrj.SolrRequest.METHOD
@@ -28,9 +29,10 @@ import org.apache.solr.client.solrj.response.{ SolrResponseBase, UpdateResponse 
 import org.apache.solr.client.solrj.{ SolrClient, SolrQuery }
 import org.apache.solr.common.util.{ ContentStreamBase, NamedList }
 import org.apache.solr.common.{ SolrDocumentList, SolrInputDocument }
-import org.json4s._
-import org.json4s.native.Serialization
-import org.json4s.native.Serialization._
+import org.json4s
+import org.json4s.JField
+import org.json4s.JsonDSL._
+import org.json4s.native.JsonMethods._
 
 import scala.collection.JavaConverters._
 import scala.language.postfixOps
@@ -66,48 +68,44 @@ trait Solr extends DebugEnhancedLogging {
     Try(solrClient.deleteByQuery(q.getQuery))
       .flatMap(checkResponseStatus)
       .recoverWith {
-        case t: HttpSolrClient.RemoteSolrException if isPareException(t) =>
+        case t: HttpSolrClient.RemoteSolrException if isParseException(t) =>
           Failure(SolrBadRequestException(t.getMessage, t))
         case t =>
           Failure(SolrDeleteException(query, t))
       }
   }
 
-  private def toJson(solrDocumentList: SolrDocumentList, query: SolrQuery): Try[String] = {
-    def toScalaMap(fieldValueMap: util.Map[String, AnyRef]) = {
-      // asScala is not good enough, serialization needs scala case classes
-      // less verbose than TypeHints, after all we need only one direction
-      fieldValueMap.keySet().asScala.map(key => key -> fieldValueMap.get(key))
-    }
 
-    val found = solrDocumentList.getNumFound
-    Try(write(Map("header" -> Map(
-      "text" -> query.getQuery,
-      "skip" -> query.getStart,
-      "limit" -> query.getRows,
-      "time_allowed" -> query.getTimeAllowed,
-      "found" -> found
-    ), "fileitems" -> (0L until found).map { i =>
-      toScalaMap(solrDocumentList.get(i.toInt).getFieldValueMap)
-    }
-    ))(Serialization.formats(NoTypeHints))) //TODO add hint once we support available date
+  private def toJson(solrDocumentList: SolrDocumentList, query: SolrQuery): String = {
+    val numFound = solrDocumentList.getNumFound
+    val result =
+      ("header" -> (
+        ("text" -> query.getQuery) ~
+          ("skip" -> query.getStart.toInt) ~
+          ("limit" -> query.getRows.toInt) ~
+          ("time_allowed" -> query.getTimeAllowed.toInt) ~
+          ("found" -> numFound)
+        )) ~
+        ("fileitems" -> (0L until numFound).map { i =>
+          solrDocumentList.get(i.toInt).getFieldValueMap.toJObject
+        })
+    pretty(render(result))
   }
 
   def search(query: SolrQuery): Try[String] = {
     (for {
       response <- Try(solrClient.query(query))
       _ <- checkResponseStatus(response)
-      json <- toJson(response.getResults, query)
-    } yield json).recoverWith {
-      case t: HttpSolrClient.RemoteSolrException if isPareException(t) =>
+    } yield toJson(response.getResults, query)
+      ).recoverWith {
+      case t: HttpSolrClient.RemoteSolrException if isParseException(t) =>
         Failure(SolrBadRequestException(t.getMessage, t))
       case t =>
-        t.printStackTrace()
         Failure(SolrSearchException(query.toQueryString, t))
     }
   }
 
-  private def isPareException(t: HttpSolrClient.RemoteSolrException) = {
+  private def isParseException(t: HttpSolrClient.RemoteSolrException) = {
     t.getRootThrowable.endsWith("ParseException")
   }
 
@@ -156,5 +154,17 @@ trait Solr extends DebugEnhancedLogging {
       .withFilter("0" !=)
       .map(_ => Failure(SolrStatusException(namedList)))
       .getOrElse(Success(()))
+  }
+}
+
+object Solr {
+  implicit class RichMap(val fieldValueMap: util.Map[String, AnyRef]) extends AnyVal {
+    def toJObject: List[(String, json4s.JValue)] = {
+      fieldValueMap
+        .keySet()
+        .asScala
+        .map(key => JField(key, fieldValueMap.get(key).toString)) // TODO dates?
+        .toList
+    }
   }
 }

@@ -32,10 +32,14 @@ Method   | Path                             | Args |Action
 `POST`   | `/fileindex/update/:store/:uuid` |      | Index all files of one bag. Eventual obsolete file items are cleared.
 `DELETE` | `/fileindex/:store[/:uuid]`      |      | Remove all items or the items of a store or bag.
 `DELETE` | `/fileindex/`                    | q    | Remove the items matching the mandatory solr query.
+`GET`    | `/filesearch`                    | text | Find documents matching the [dismax] query.
 
 The following example would delete a bag
 
     http://easy.dans.knaw.nl/fileindex/?q=easy_dataset_id:ef425828-e4ae-4d58-bf6a-c89cd46df61c
+    
+[dismax]: https://lucene.apache.org/solr/guide/6_6/the-dismax-query-parser.html#the-dismax-query-parser
+
 
 DESCRIPTION
 -----------
@@ -91,6 +95,13 @@ EXAMPLES
 
 INSTALLATION AND CONFIGURATION
 ------------------------------
+
+Prerequisites:
+* [easy-bag-store](https://github.com/DANS-KNAW/easy-bag-store/)
+* [dans.solr](https://github.com/DANS-KNAW/dans.solr)
+* a [Solr core](blob/master/src/main/assembly/dist/install/fileitems),
+  installed for example with with [vagrant.yml](blob/master/src/main/ansible/vagrant.yml)
+  which thus becomes accessible for administrators with http://localhost:8983/solr/#/fileitems/query
 
 
 1. Unzip the tarball to a directory of your choice, typically `/usr/local/`

@@ -145,7 +145,14 @@ class UpdateServletSpec extends TestSupportFixture
 
   it should "complain about the required query" in {
     delete("/") {
-      body shouldBe "delete requires param 'q': got []"
+      body shouldBe "delete requires param 'q', got no params at all"
+      status shouldBe SC_BAD_REQUEST
+    }
+  }
+
+  it should "show params received" in {
+    delete("/?skip") {
+      body shouldBe "delete requires param 'q', got params [skip -> ]"
       status shouldBe SC_BAD_REQUEST
     }
   }

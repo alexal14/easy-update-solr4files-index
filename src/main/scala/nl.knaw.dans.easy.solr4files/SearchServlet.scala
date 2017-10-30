@@ -50,7 +50,7 @@ class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
   get("/") {
     params.get("text")
       .map(q => respond(app.search(createQuery(q))))
-      .getOrElse(BadRequest("filesearch requires param 'text' (a solr dismax query), got " + params.mkString("[", ",", "]")))
+      .getOrElse(BadRequest("filesearch requires param 'text' (a solr dismax query), " + params.got))
   }
 
   private def createQuery(query: String) = {
@@ -59,9 +59,9 @@ class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
       addFilterQuery("easy_file_accessible_to:ANONYMOUS + easy_file_accessible_to:KNOWN")
       // TODO filter query on available date
       setFields("easy_dataset_*", "easy_file_*")
-      setStart(0)
-      setRows(10)
-      setTimeAllowed(5000) // 5 seconds TODO make configurable
+      setStart(0) // todo user configurable
+      setRows(10) // todo user configurable with a max from application.properties
+      setTimeAllowed(5000) // 5 seconds TODO configurable in application.properties
       // setFacet... setMoreLikeThis... setHighlight... setDebug... etc
 
       set("defType", queryParser)
