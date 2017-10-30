@@ -79,7 +79,8 @@ class SearchServletSpec extends TestSupportFixture
                               |    "skip":0,
                               |    "limit":10,
                               |    "time_allowed":5000,
-                              |    "found":2
+                              |    "found":2,
+                              |    "returned":2
                               |  },
                               |  "fileitems":[{""".stripMargin)
       body should include("""{
@@ -89,6 +90,25 @@ class SearchServletSpec extends TestSupportFixture
                             |    "name":"some.png",
                             |    "size":"123"
                             |  }""".stripMargin)
+      body should endWith(""""
+                            |  }]
+                            |}""".stripMargin)
+      status shouldBe SC_OK
+    }
+  }
+
+  it should "return a single file" ignore {
+    get(s"/?text=nothing&limit=1") {
+      body should startWith("""{
+                              |  "header":{
+                              |    "text":"nothing",
+                              |    "skip":0,
+                              |    "limit":1,
+                              |    "time_allowed":5000,
+                              |    "found":2,
+                              |    "retuned":1
+                              |  },
+                              |  "fileitems":[{""".stripMargin)
       body should endWith(""""
                             |  }]
                             |}""".stripMargin)

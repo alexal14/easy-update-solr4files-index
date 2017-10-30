@@ -54,13 +54,16 @@ class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
   }
 
   private def createQuery(query: String) = {
+    // invalid optional values are ignored
+    val rows = params.get("limit").withFilter(_.matches("[1-9][0-9]*")).map(_.toInt).getOrElse(10)
+    val start = params.get("skip").withFilter(_.matches("[0-9]+")).map(_.toInt).getOrElse(0)
     new SolrQuery() {
       setQuery(query)
       addFilterQuery("easy_file_accessible_to:ANONYMOUS + easy_file_accessible_to:KNOWN")
       // TODO filter query on available date
       setFields("easy_dataset_*", "easy_file_*")
-      setStart(0) // todo user configurable
-      setRows(10) // todo user configurable with a max from application.properties
+      setStart(start)
+      setRows(rows) // todo max from application.properties
       setTimeAllowed(5000) // 5 seconds TODO configurable in application.properties
       // setFacet... setMoreLikeThis... setHighlight... setDebug... etc
 
