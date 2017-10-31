@@ -7,6 +7,7 @@
             A pakbon (with e-mail addresses !) from example input of https://www.sikb.nl/doc/OS17/Deel%20A%20Specificatie%20Pakbon%2020120604%20versie%201.2.1.pdf
             Hidden metadata in a PDF revealed by the index.
             Image date not accepted by the solr configuration of https://github.com/DANS-KNAW/easy-dtap/pull/131.
+            Metadata files and manifests are just valid enough to get indexed by the test-VM, not suitable to ingest in a real bagstore.
         </dcterms:description>
         <dcx-dai:creatorDetails>
             <dcx-dai:author>
@@ -23,4 +24,7 @@
         <ddm:audience>D37000</ddm:audience>
         <ddm:accessRights>OPEN_ACCESS</ddm:accessRights>
     </ddm:profile>
+    <ddm:dcmiMetadata>
+        <dct:identifier xsi:type="id-type:DOI">10.5072/dans-x6g-x2hb</dct:identifier>
+    </ddm:dcmiMetadata>
 </ddm:DDM>
