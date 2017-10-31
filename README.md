@@ -47,7 +47,7 @@ Method   | Path                             | Args |Action
 
 The following example would delete a bag
 
-    http://easy.dans.knaw.nl/fileindex/?q=easy_dataset_id:ef425828-e4ae-4d58-bf6a-c89cd46df61c
+    curl -X DELETE 'http://easy.dans.knaw.nl/fileindex/?q=easy_dataset_id:ef425828-e4ae-4d58-bf6a-c89cd46df61c'
     
 [dismax]: https://lucene.apache.org/solr/guide/6_6/the-dismax-query-parser.html#the-dismax-query-parser
 
