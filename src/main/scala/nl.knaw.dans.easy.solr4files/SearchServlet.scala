@@ -59,9 +59,9 @@ class SearchServlet(app: EasyUpdateSolr4filesIndexApp) extends ScalatraServlet w
     val start = params.get("skip").withFilter(_.matches("[0-9]+")).map(_.toInt).getOrElse(0)
     new SolrQuery() {
       setQuery(query)
-      addFilterQuery("easy_file_accessible_to:ANONYMOUS + easy_file_accessible_to:KNOWN")
-      // TODO filter query on available date
-      setFields("easy_dataset_*", "easy_file_*")
+      addFilterQuery("easy_file_accessible_to:ANONYMOUS +easy_file_accessible_to:KNOWN")
+      addFilterQuery("-easy_dataset_date_available:[NOW/DAY+1DAY TO *]")
+      setFields("easy_dataset_*", "easy_file_*") // TODO user configurable like rows and start
       setStart(start)
       setRows(rows) // todo max from application.properties
       setTimeAllowed(5000) // 5 seconds TODO configurable in application.properties
