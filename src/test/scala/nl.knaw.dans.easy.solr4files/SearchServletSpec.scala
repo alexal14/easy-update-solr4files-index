@@ -29,7 +29,7 @@ class SearchServletSpec extends TestSupportFixture
   with ScalatraSuite
   with MockFactory {
 
-  private class StubbedWiring extends ApplicationWiring(createConfig("vault")) {
+  private class StubbedWiring extends ApplicationWiring(configWithMockedVault) {
 
     override lazy val solrClient: SolrClient = new SolrClient() {
       // can't use mock because SolrClient has a final method
@@ -73,26 +73,30 @@ class SearchServletSpec extends TestSupportFixture
 
   it should "return json" in {
     get(s"/?text=nothing") {
-      body should startWith("""{
-                              |  "header":{
-                              |    "text":"nothing",
-                              |    "skip":0,
-                              |    "limit":10,
-                              |    "time_allowed":5000,
-                              |    "found":2,
-                              |    "returned":2
-                              |  },
-                              |  "fileitems":[{""".stripMargin)
-      body should include("""{
-                            |    "name":"file.txt"
-                            |  }""".stripMargin)
-      body should include("""{
-                            |    "name":"some.png",
-                            |    "size":"123"
-                            |  }""".stripMargin)
-      body should endWith(""""
-                            |  }]
-                            |}""".stripMargin)
+      body should startWith(
+        """{
+          |  "header":{
+          |    "text":"nothing",
+          |    "skip":0,
+          |    "limit":10,
+          |    "time_allowed":5000,
+          |    "found":2,
+          |    "returned":2
+          |  },
+          |  "fileitems":[{""".stripMargin)
+      body should include(
+        """{
+          |    "name":"file.txt"
+          |  }""".stripMargin)
+      body should include(
+        """{
+          |    "name":"some.png",
+          |    "size":"123"
+          |  }""".stripMargin)
+      body should endWith(
+        """"
+          |  }]
+          |}""".stripMargin)
       status shouldBe SC_OK
     }
   }
@@ -100,19 +104,21 @@ class SearchServletSpec extends TestSupportFixture
   it should "return a single file" ignore {
     // TODO when fixed add arguments to readme
     get(s"/?text=nothing&limit=1") {
-      body should startWith("""{
-                              |  "header":{
-                              |    "text":"nothing",
-                              |    "skip":0,
-                              |    "limit":1,
-                              |    "time_allowed":5000,
-                              |    "found":2,
-                              |    "retuned":1
-                              |  },
-                              |  "fileitems":[{""".stripMargin)
-      body should endWith(""""
-                            |  }]
-                            |}""".stripMargin)
+      body should startWith(
+        """{
+          |  "header":{
+          |    "text":"nothing",
+          |    "skip":0,
+          |    "limit":1,
+          |    "time_allowed":5000,
+          |    "found":2,
+          |    "retuned":1
+          |  },
+          |  "fileitems":[{""".stripMargin)
+      body should endWith(
+        """"
+          |  }]
+          |}""".stripMargin)
       status shouldBe SC_OK
     }
   }

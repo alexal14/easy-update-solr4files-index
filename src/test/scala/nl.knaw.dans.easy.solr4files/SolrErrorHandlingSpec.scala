@@ -28,7 +28,7 @@ class SolrErrorHandlingSpec extends TestSupportFixture
   with ServletFixture
   with ScalatraSuite {
 
-  private class StubbedWiring extends ApplicationWiring(createConfig("vault")) {
+  private class StubbedWiring extends ApplicationWiring(configWithMockedVault) {
 
     override lazy val solrClient: SolrClient = new SolrClient() {
       // can't use mock because SolrClient has a final method
@@ -74,6 +74,7 @@ class SolrErrorHandlingSpec extends TestSupportFixture
   }
 
   "submit" should "return the exception bubbling up from solrClient.request" in {
+    initVault()
     val testResourcesUUID = "9da0541a-d2c8-432e-8129-979a9830b427"
     post(s"/fileindex/update/pdbs/$testResourcesUUID") {
       body shouldBe s"solr update of file $testResourcesUUID/data/path/to/a/random/video/hubble.mpg failed with mocked add"

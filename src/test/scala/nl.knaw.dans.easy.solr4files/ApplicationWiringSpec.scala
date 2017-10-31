@@ -17,6 +17,7 @@ package nl.knaw.dans.easy.solr4files
 
 import java.util.UUID
 
+import org.apache.commons.io.FileUtils.write
 import org.apache.solr.client.solrj.request.ContentStreamUpdateRequest
 import org.apache.solr.client.solrj.response.UpdateResponse
 import org.apache.solr.client.solrj.{ SolrClient, SolrRequest, SolrResponse }
@@ -32,7 +33,7 @@ class ApplicationWiringSpec extends TestSupportFixture {
   private val uuid = UUID.fromString("9da0541a-d2c8-432e-8129-979a9830b427")
   private val store = "pdbs"
 
-  private class MockedAndStubbedWiring extends ApplicationWiring(createConfig("vault")) {
+  private class MockedAndStubbedWiring extends ApplicationWiring(configWithMockedVault) {
     override lazy val solrClient: SolrClient = new SolrClient() {
       // can't use mock because SolrClient has a final method
 
@@ -71,6 +72,7 @@ class ApplicationWiringSpec extends TestSupportFixture {
   }
 
   "update" should "call the stubbed solrClient.request" in {
+    initVault()
     assume(canConnectToEasySchemas)
     val result = new MockedAndStubbedWiring().update(store, uuid)
     inside(result) { case Success(feedback) =>
@@ -86,7 +88,15 @@ class ApplicationWiringSpec extends TestSupportFixture {
   }
 
   "initSingleStore" should "call the stubbed ApplicationWiring.update method" in {
-    val result = new ApplicationWiring(createConfig("vaultBagIds")) {
+    clearVault()
+    write(testDir.resolve("vault/stores/pdbs/bags").toFile,
+      """    9da0541a-d2c8-432e-8129-979a9830b427
+        |    24d305fc-060c-4b3b-a5f5-9f212d463cbc
+        |    3528bd4c-a87a-4bfa-9741-a25db7ef758a
+        |    f70c19a5-0725-4950-aa42-6489a9d73806
+        |    6ccadbad-650c-47ec-936d-2ef42e5f3cda""".stripMargin
+    )
+    val result = new ApplicationWiring(configWithMockedVault) {
       // vaultBagIds/bags can't be a file and directory so we need a stub, a failure demonstrates it's called
       override def update(store: String, uuid: UUID) =
         Failure(new Exception("stubbed ApplicationWiring.update"))
@@ -96,7 +106,14 @@ class ApplicationWiringSpec extends TestSupportFixture {
   }
 
   "initAllStores" should "call the stubbed ApplicationWiring.initSingleStore method" in {
-    val result = new ApplicationWiring(createConfig("vaultStoreNames")) {
+    clearVault()
+    write(testDir.resolve("vault/stores").toFile,
+      """    <http://localhost:20110/stores/foo>
+        |    <http://localhost:20110/stores/bar>
+        |    <http://localhost:20110/stores/rabarbera>
+        |    <http://localhost:20110/stores/barbapapa>""".stripMargin
+    )
+    val result = new ApplicationWiring(configWithMockedVault) {
       // vaultStoreNames/stores can't be a file and directory so we need a stub, a failure demonstrates it's called
       override def initSingleStore(store: String) = Failure(new Exception("stubbed ApplicationWiring.initSingleStore"))
     }.initAllStores()

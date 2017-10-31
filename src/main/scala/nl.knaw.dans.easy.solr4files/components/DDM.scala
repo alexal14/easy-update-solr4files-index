@@ -121,7 +121,7 @@ object DDM {
 
   private def date(n: Node, solrField: String): (String, String) = {
     // a corrupt bag can cause an IllegalArgumentException
-    (solrField, solrDateFormatter.print(new DateTime(n.text))+"T00:00:00Z")
+    (solrField, solrDateFormatter.print(new DateTime(n.text)) + "T00:00:00Z")
   }
 
   private def nestedText(ns: Seq[Node], solrField: String): (String, String) = {

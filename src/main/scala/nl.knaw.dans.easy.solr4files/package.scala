@@ -17,19 +17,12 @@ package nl.knaw.dans.easy
 
 import java.io.File
 import java.net.{ URL, URLDecoder }
-import java.util
 
 import nl.knaw.dans.lib.error._
 import nl.knaw.dans.lib.logging.DebugEnhancedLogging
 import org.apache.commons.io.FileUtils.readFileToString
 import org.apache.solr.common.util.NamedList
-import org.{ json4s, scalatra }
-import org.json4s.JField
-
-import scala.collection.JavaConverters._
-import org.json4s.JsonDSL._
-import org.json4s._
-import org.json4s.native.JsonMethods._
+import org.scalatra
 
 import scala.annotation.tailrec
 import scala.collection.mutable
@@ -104,7 +97,7 @@ package object solr4files extends DebugEnhancedLogging {
     }
   }
 
-  implicit class RichParams (val left: scalatra.Params ) extends AnyVal{
+  implicit class RichParams(val left: scalatra.Params) extends AnyVal {
     def got: String = if (left.isEmpty) "got no params at all"
                       else "got params " + left.mkString("[", ",", "]")
   }

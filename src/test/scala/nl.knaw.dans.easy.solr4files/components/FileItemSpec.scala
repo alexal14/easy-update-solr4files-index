@@ -24,10 +24,11 @@ class FileItemSpec extends TestSupportFixture {
   private val bag = Bag(
     "pdbs",
     UUID.fromString("9da0541a-d2c8-432e-8129-979a9830b427"),
-    mockVault("vault")
+    mockedVault
   )
 
   "solrLiteral" should "return proper values" in {
+    initVault()
     val xml = <file filepath="data/reisverslag/centaur.mpg">
       <dcterms:type>http://schema.org/VideoObject</dcterms:type>
       <dcterms:format>video/mpeg</dcterms:format>
