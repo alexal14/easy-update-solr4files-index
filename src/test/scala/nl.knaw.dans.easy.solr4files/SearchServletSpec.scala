@@ -98,6 +98,7 @@ class SearchServletSpec extends TestSupportFixture
   }
 
   it should "return a single file" ignore {
+    // TODO when fixed add arguments to readme
     get(s"/?text=nothing&limit=1") {
       body should startWith("""{
                               |  "header":{

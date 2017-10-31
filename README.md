@@ -1,6 +1,17 @@
 easy-update-solr4files-index
-===========
+============================
 [![Build Status](https://travis-ci.org/DANS-KNAW/easy-update-solr4files-index.png?branch=master)](https://travis-ci.org/DANS-KNAW/easy-update-solr4files-index)
+
+* [SYNOPSIS](#synopsis)
+  + [HTTP service](#http-service)
+* [DESCRIPTION](#description)
+* [ARGUMENTS](#arguments)
+* [EXAMPLES](#examples)
+* [INSTALLATION AND CONFIGURATION](#installation-and-configuration)
+  + [Prerequisites](#prerequisites)
+  + [steps](#steps)
+  + [Security advice](#security-advice)
+* [BUILDING FROM SOURCE](#building-from-source)
 
 
 SYNOPSIS
@@ -96,13 +107,16 @@ EXAMPLES
 INSTALLATION AND CONFIGURATION
 ------------------------------
 
-Prerequisites:
+### Prerequisites
+
 * [easy-bag-store](https://github.com/DANS-KNAW/easy-bag-store/)
 * [dans.solr](https://github.com/DANS-KNAW/dans.solr)
-* a [Solr core](blob/master/src/main/assembly/dist/install/fileitems),
-  installed for example with with [vagrant.yml](blob/master/src/main/ansible/vagrant.yml)
-  which thus becomes accessible for administrators with http://localhost:8983/solr/#/fileitems/query
+* A [Solr core](src/main/assembly/dist/install/fileitems),
+  installed for example with with [vagrant.yml](src/main/ansible/vagrant.yml)
+  which thus becomes accessible for administrators with `http://localhost:8983/solr/#/fileitems/query`
+  alias `http://test.dans.knaw.nl:8983/solr/#/fileitems/query`
 
+### Steps
 
 1. Unzip the tarball to a directory of your choice, typically `/usr/local/`
 2. A new directory called easy-update-solr4files-index-<version> will be created
@@ -115,6 +129,13 @@ Prerequisites:
 
 General configuration settings can be set in `cfg/application.properties` and logging can be configured
 in `cfg/logback.xml`. The available settings are explained in comments in aforementioned files.
+
+
+### Security advice
+
+Keep the admin interface and fileindex servlet behind a firewall.
+Only expose the `filesearch` servlet through a proxy, for example:
+`http://easy.dans.knaw.nl/files/search` to `http://localhost:20150/filesearch` 
 
 
 BUILDING FROM SOURCE
