@@ -41,7 +41,7 @@ class DDM(xml: Node) extends DebugEnhancedLogging {
     (profile \ "title").map(simlpeText(_, "dataset_title")) ++
     (profile \ "creator").map(simlpeText(_, "dataset_creator")) ++
     (profile \ "creatorDetails").map(nestedText(_, "dataset_creator")) ++
-    (profile \ "available").map(date(_, "dataset_data_available")) ++
+    (profile \ "available").map(date(_, "dataset_date_available")) ++
     (dcmiMetadata \ "identifier").withFilter(_.hasType("id-type:DOI")).map(simlpeText(_, "dataset_doi")) ++
     (dcmiMetadata \ "identifier").withFilter(!_.hasType("id-type:DOI")).map(typedID(_, "dataset_identifier")) ++
     (profile \ "audience").flatMap(n => Seq(

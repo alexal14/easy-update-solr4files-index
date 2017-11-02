@@ -39,7 +39,7 @@ class DDMSpec extends TestSupportFixture {
       ("dataset_identifier", "easy-dataset:14"),
       ("dataset_identifier", "ds1"),
       ("dataset_audience", "D30000"),
-      ("dataset_data_available", "1992-07-30T00:00:00Z"),
+      ("dataset_date_available", "1992-07-30T00:00:00Z"),
       ("dataset_subject", "Humanities"),
       ("dataset_relation", "dummy"),
       ("dataset_relation", "blabla"),
