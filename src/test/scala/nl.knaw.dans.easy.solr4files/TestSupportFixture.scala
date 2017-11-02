@@ -18,6 +18,7 @@ package nl.knaw.dans.easy.solr4files
 import java.io.File
 import java.net.{ HttpURLConnection, URI, URL, URLEncoder }
 import java.nio.file.{ Files, Path, Paths }
+import java.util.UUID
 
 import nl.knaw.dans.easy.solr4files.components.Vault
 import org.apache.commons.configuration.PropertiesConfiguration
@@ -34,6 +35,9 @@ trait TestSupportFixture extends FlatSpec with Matchers with Inside with BeforeA
     Files.createDirectories(path)
     path
   }
+
+  val uuidCentaur = UUID.fromString("9da0541a-d2c8-432e-8129-979a9830b427")
+  val uuidAnonymized = UUID.fromString("1afcc4e9-2130-46cc-8faf-2663e199b218")
 
   val mockedVault: Vault = new Vault {
     // vault/stores is sometimes a folder, sometimes a dir

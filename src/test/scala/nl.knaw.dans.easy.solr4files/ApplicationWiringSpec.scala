@@ -17,6 +17,7 @@ package nl.knaw.dans.easy.solr4files
 
 import java.util.UUID
 
+import nl.knaw.dans.easy.solr4files.components.{ Bag, FileItem }
 import org.apache.commons.io.FileUtils.write
 import org.apache.solr.client.solrj.request.ContentStreamUpdateRequest
 import org.apache.solr.client.solrj.response.UpdateResponse
@@ -29,8 +30,6 @@ import scala.util.{ Failure, Success }
 
 class ApplicationWiringSpec extends TestSupportFixture {
 
-  // values matching the vault mocked in test/resources
-  private val uuid = UUID.fromString("9da0541a-d2c8-432e-8129-979a9830b427")
   private val store = "pdbs"
 
   private class MockedAndStubbedWiring extends ApplicationWiring(configWithMockedVault) {
@@ -74,9 +73,18 @@ class ApplicationWiringSpec extends TestSupportFixture {
   "update" should "call the stubbed solrClient.request" in {
     initVault()
     assume(canConnectToEasySchemas)
-    val result = new MockedAndStubbedWiring().update(store, uuid)
+    val result = new MockedAndStubbedWiring().update(store, uuidCentaur)
     inside(result) { case Success(feedback) =>
-      feedback.toString shouldBe s"Bag $uuid: 7 times FileSubmittedWithContent, 2 times FileSubmittedWithJustMetadata"
+      feedback.toString shouldBe s"Bag ${ uuidCentaur }: 7 times FileSubmittedWithContent, 2 times FileSubmittedWithJustMetadata"
+    }
+  }
+
+  it should "not stumble on difficult file names" in {
+    initVault()
+    assume(canConnectToEasySchemas)
+    val result = new MockedAndStubbedWiring().update(store, uuidAnonymized)
+    inside(result) { case Success(feedback) =>
+      feedback.toString shouldBe s"Bag ${ uuidAnonymized }: 3 times FileSubmittedWithContent"
     }
   }
 
