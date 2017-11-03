@@ -40,6 +40,16 @@ package object solr4files extends DebugEnhancedLogging {
   case class HttpStatusException(msg: String, response: HttpResponse[String])
     extends Exception(s"$msg - ${ response.statusLine }, details: ${ response.body }")
 
+  case class InvalidCredentialsException(userName: String, cause: Throwable)
+    extends Exception(s"invalid credentials for $userName") {
+    logger.info(s"invalid credentials for $userName: ${ cause.getMessage }", cause)
+  }
+
+  case class AuthorisationNotAvailableException(cause: Throwable)
+    extends Exception(cause.getMessage, cause) {
+    logger.info(cause.getLocalizedMessage, cause)
+  }
+
   case class SolrStatusException(namedList: NamedList[AnyRef])
     extends Exception(s"solr returned: ${ namedList.asShallowMap().values().toArray().mkString }")
 

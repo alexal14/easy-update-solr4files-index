@@ -31,7 +31,11 @@ import scala.xml.Elem
  * @param configuration the application configuration
  */
 class ApplicationWiring(configuration: Configuration)
-  extends DebugEnhancedLogging with Vault with Solr {
+  extends DebugEnhancedLogging with Vault with Solr with LdapAuthenticationComponent {
+
+  override val authentication: Authentication = new LdapAuthentication {}
+  override val ldapProviderUrl: URI = new URI(configuration.properties.getString("ldap.provider.url", "ldap://localhost"))
+  override val usersParentEntry: String = configuration.properties.getString("ldap.users.parent", "")
 
   // don't need resolve for solr, URL gives more early errors TODO perhaps not yet at service startup once implemented
   override val solrUrl: URL = new URL(configuration.properties.getString("solr.url", ""))

@@ -111,6 +111,11 @@
             <artifactId>scalatra-scalate_2.11</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.scalatra</groupId>
+            <artifactId>scalatra-auth_2.11</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
         </dependency>
